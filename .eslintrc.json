@@ -1,0 +1,11 @@
+
+{
+  "extends": "next/core-web-vitals",
+  "rules": {
+    "react-hooks/exhaustive-deps": "off", // Example: Disabling a specific rule
+    "no-console": "off", // Allow console.logs
+    "@next/next/no-html-link-for-pages": "off", // Disable Next.js link warning
+		  "react/no-unescaped-entities": "off"
+
+  }
+}

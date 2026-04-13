@@ -1,0 +1,25 @@
+{
+  "compilerOptions": {
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": true,
+		"skipLibCheck": true,
+    "noEmit": false,
+    "strict": false,
+    "noImplicitAny": false,
+    "types": [],
+    "preserveWatchOutput": true,
+		"typeRoots": ["./node_modules/@types"],
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "bundler",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "incremental": true,
+    "paths": {
+      "@/*": ["./src/*"]
+    }
+  },
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "cypress.config.js", "cypress/support/commands.js"],
+  "exclude": ["node_modules"]
+}
