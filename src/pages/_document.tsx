@@ -6,7 +6,7 @@ export default function Document() {
     "@context": "https://schema.org",
     "@type": "Person",
     name: "David Dari Dwam",
-    birthDate: "1951",
+    birthDate: "1961",
     deathDate: "2026",
     description:
       "Beloved father, leader, and inspiration. Memorial site celebrating his life and legacy.",
@@ -25,13 +25,13 @@ export default function Document() {
         />
         <meta
           name="keywords"
-          content="Olaseni Olagbaju, Babatunde Olagbaju, Olagbaju memorial, obituary, legacy, 1951, 2026"
+          content="Olaseni Olagbaju, Babatunde Olagbaju, Olagbaju memorial, obituary, legacy, 1961, 2026"
         />
 
         {/* Open Graph Meta Tags for Social Media */}
         <meta
           property="og:title"
-          content="David Dari Dwam Memorial | 1951-2026"
+          content="David Dari Dwam Memorial | 1961-2026"
         />
         <meta
           property="og:description"
@@ -48,7 +48,7 @@ export default function Document() {
         <meta name="twitter:title" content="David Dari Dwam Memorial" />
         <meta
           name="twitter:description"
-          content="Celebrating the life and legacy of David Dari Dwam (1951-2026)"
+          content="Celebrating the life and legacy of David Dari Dwam (1961-2026)"
         />
         <meta
           name="twitter:image"

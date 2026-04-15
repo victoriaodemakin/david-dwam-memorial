@@ -5,7 +5,7 @@ const StructuredData = () => {
     "@context": "https://schema.org",
     "@type": "Person",
     name: "David Dari Dwam",
-    birthDate: "1951",
+    birthDate: "1961",
     deathDate: "2026",
     description:
       "Beloved father, leader, and inspiration. Memorial site celebrating his life and legacy.",

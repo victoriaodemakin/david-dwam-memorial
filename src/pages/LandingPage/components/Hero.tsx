@@ -18,7 +18,7 @@ const HeroSection = () => {
         <div className="text-center">
           {/* SEO: H1 with full name and memorial keyword */}
           <h1 className="text-3xl md:text-4xl uppercase font-semibold animate-fade-in-up inline-block pb-2">
-           Rev David Dari Dwam Memorial
+            Rev David Dari Dwam Memorial
           </h1>
           <div className="h-[5px] bg-gradient-to-r from-transparent via-[#fcbb68] to-transparent divider-line mx-auto rounded"></div>
         </div>
@@ -28,7 +28,7 @@ const HeroSection = () => {
           Celebrating the Life and Legacy of Rev David Dari Dwam
         </h2>
         <p className="text-gray-600 font-normal text-base md:text-lg mb-6">
-          1951 - 2026 | Beloved Husband, Father, Brother, Uncle, and Pastor
+          1961 - 2026 | Beloved Husband, Father, Brother, Uncle, and Pastor
         </p>
 
         <div className="flex flex-col mt-5 md:flex-row items-center justify-center gap-8 md:gap-16 max-w-5xl mx-auto">
@@ -37,29 +37,30 @@ const HeroSection = () => {
             className="text-6xl md:text-8xl font-bold animate-fade-in-left"
             aria-label="Birth year"
           >
-            <time dateTime="1951">1951</time>
+            <time dateTime="1961">1961</time>
           </div>
 
-         <div
-  style={{
-    padding: "6px",
-    borderRadius: "50%",
-    background: "conic-gradient(#c8960c, #ffd700, #e6b800, #f5c518, #c8960c, #b8860b, #ffd700, #c8960c)",
-    boxShadow: "0 0 20px 6px rgba(200, 150, 12, 0.4)",
-  }}
-  className="w-64 h-64 md:w-96 md:h-96 animate-fade-in-up"
->
-  <div className="w-full h-full rounded-full overflow-hidden relative">
-    <Image
-      src={HeroImage}
-      alt="David Dari Dwam memorial portrait photo"
-      fill
-      className="object-cover object-top"
-      priority
-      sizes="(max-width: 768px) 256px, 320px"
-    />
-  </div>
-</div>
+          <div
+            style={{
+              padding: "6px",
+              borderRadius: "50%",
+              background:
+                "conic-gradient(#c8960c, #ffd700, #e6b800, #f5c518, #c8960c, #b8860b, #ffd700, #c8960c)",
+              boxShadow: "0 0 20px 6px rgba(200, 150, 12, 0.4)",
+            }}
+            className="w-64 h-64 md:w-96 md:h-96 animate-fade-in-up"
+          >
+            <div className="w-full h-full rounded-full overflow-hidden relative">
+              <Image
+                src={HeroImage}
+                alt="David Dari Dwam memorial portrait photo"
+                fill
+                className="object-cover object-top"
+                priority
+                sizes="(max-width: 768px) 256px, 320px"
+              />
+            </div>
+          </div>
           <div
             className="text-6xl md:text-8xl font-bold animate-fade-in-right"
             aria-label="Year of passing"

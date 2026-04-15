@@ -13,43 +13,43 @@ const Favorites = () => (
           <div className="h-[5px] bg-gradient-to-r from-transparent via-[#fcbb68] to-transparent divider-line mx-auto rounded"></div>
 
       </div>
-    <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+    <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4 max-w-6xl mx-auto">
 
       {/* Favorite Saying */}
       <div className="p-4 font-light">
-        <div className="flex items-center gap-2 mb-3">
+        <div className="flex items-center ">
           <MessageCircle size={20} style={{ color: '#deac6c' }} />
           <h3 className="font-medium text-base" style={{ color: '#deac6c' }}>
             What was Rev David Dari Dwam's favorite Saying?
           </h3>
         </div>
         <p className="text-gray-700 text-sm leading-relaxed">
-          "Truly God is faithful he cannot lie"<br />
+          "It is well with the righteous."<br />
         </p>
       </div>
 
       {/* Favorite Book */}
       <div className="p-4 font-light">
-        <div className="flex items-center gap-2 mb-3">
+        <div className="flex items-center ">
           <Book size={20} style={{ color: '#deac6c' }} />
           <h3 className="font-medium text-base" style={{ color: '#deac6c' }}>
             What was Rev David Dari Dwam's favorite Book?
           </h3>
         </div>
         <p className="text-gray-700 text-sm leading-relaxed">
-Yam and corn beef stew and plantain        </p>
+The Bible        </p>
       </div>
 
       {/* Favorite Movie */}
       <div className="p-4 font-light">
-        <div className="flex items-center gap-2 mb-3">
+        <div className="flex items-center gap-2">
           <Film size={20} style={{ color: '#deac6c' }} />
           <h3 className="font-medium text-base" style={{ color: '#deac6c' }}>
-            What was Rev David's favorite Movie?
+            What was Rev David's favorite Bible Verse?
           </h3>
         </div>
         <p className="text-gray-700 text-sm leading-relaxed">
-Goodfellas and The Godfather         </p>
+					Psalms 91         </p>
       </div>
 
       {/* Favorite Travel Destination */}
@@ -64,18 +64,6 @@ Goodfellas and The Godfather         </p>
 Grace is your faithfulness        </p>
       </div>
 
-      {/* Favorite Color
-      <div className="p-4 font-light">
-        <div className="flex items-center gap-2 mb-3">
-          <Palette size={20} style={{ color: '#deac6c' }} />
-          <h3 className="font-medium text-base" style={{ color: '#deac6c' }}>
-            What was Olaseni's favorite Color?
-          </h3>
-        </div>
-        <p className="text-gray-700 text-sm leading-relaxed">
-          Pale green, pale blue... anything pale or pastel.
-        </p>
-      </div> */}
 
       {/* Fun Fact */}
       <div className="p- font-light">

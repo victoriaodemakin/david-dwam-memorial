@@ -60,10 +60,10 @@ const Loader = ({ onLoadComplete }: { onLoadComplete: () => void }) => {
 
           {/* Subtitle with fade-in */}
           <p className="text-lg md:text-xl text-gray-600 mt-6 animate-fade-in animation-delay-500 font-light">
-            1951 - 2026
+            1961 - 2026
           </p>
           <p className="text-sm md:text-base text-gray-500 animate-fade-in animation-delay-600 italic">
-            In Loving Memory
+            I am the righteousness of God in Christ.
           </p>
         </div>
 

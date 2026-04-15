@@ -5,7 +5,7 @@ import Section from "../components/sessionManagement";
 const eulogiesData = [
   {
     id: 1,
-    name: "Pastor Mrs Naris Dari Dwam",
+    name: "Pastor Mrs Nerias Dari david",
     title: "Wife",
     message:
       "My beloved David, your departure has left a void in my heart that words cannot fully express. You were not just my husband, you were my partner in faith, my strength, and my greatest encourager. Together we walked this journey of life and ministry, and I am forever grateful for every moment God gave us. You served the Lord with all your heart, and I know He has welcomed you home with the words, 'Well done, good and faithful servant.' I will carry your love, your laughter, and your legacy with me every day. Until we meet again, rest in the arms of the Father you served so well. I love you always.",
@@ -13,7 +13,7 @@ const eulogiesData = [
   },
   {
     id: 2,
-    name: "Amsami Elino Dwam",
+    name: "Amsami  David",
     title: "Daughter",
     message:
       "I can't believe that you're no longer with us my beloved father. I wasn't prepared for you to go when you did, but I understand that you've gone to a better place where you'll experience God's divine peace, joy and love. I looked up to you and thought you were invincible. You were so calm, funny, kind, and loving. I just wanted to see you happy and content because I adored you. I only wish we had more time to talk and say things that were left unsaid, I wish we had more time to make more memories. I thank God for your life and for knowing you. There will never be anyone like you. You were truly a special soul who touched the lives of so many with your warm heart and generosity. I love you so much Daddy and I believe we will see each other again in heaven. Rest in perfect peace.",
@@ -21,7 +21,7 @@ const eulogiesData = [
   },
   {
     id: 3,
-    name: "Pano Isaac Dwam",
+    name: "Pano Isaac David",
     title: "Son",
     message:
       "Dad, you were an extraordinary man a soldier who became a shepherd, a father who led by example, and a pastor who never stopped caring for others. I knew you as a generous, strong, and deeply loving man who tried his best every single day to impact lives positively. The memories of who you were will never fade in my mind. You lived fully and you never gave up. We love you Dad, and we know your spirit will always be with us. May your soul rest in eternal peace. You will never be forgotten.",
@@ -29,7 +29,7 @@ const eulogiesData = [
   },
   {
     id: 4,
-    name: "Excel Dari Dwam",
+    name: "Echem David",
     title: "Daughter",
     message:
       "Daddy, you were my hero. From the Nigerian Navy to the pulpit, you showed me what it means to serve with honour and to love with a whole heart. Your discipline, your faith, and your warmth shaped everything I am. I hold on to every memory your laughter, your wisdom, your prayers over us. I thank God every day that you were my father. There will never be another like you. The world is quieter without you, but heaven is richer. Rest well, Daddy. I love you more than words can say.",
@@ -54,6 +54,46 @@ const eulogiesData = [
 ];
 
 const EulogiesSection = () => {
+	const BibleVerseCard = ({ reference, preview, full, delay, bg, border }) => {
+		const [expanded, setExpanded] = React.useState(false);
+	
+		return (
+			<div
+				className={`quote-card bg-gradient-to-br ${bg} rounded-2xl p-8 ${border} shadow-lg animate-fade-in-up ${delay}`}
+			>
+				<div className="flex items-start gap-4">
+					<span className="text-5xl text-yellow-600 font-serif leading-none opacity-50 animate-float">
+						"
+					</span>
+					<div className="flex-1">
+						<p className="text-xs font-semibold uppercase tracking-widest mb-3 text-yellow-700 opacity-70">
+							{reference}
+						</p>
+						<p className="text-yellow-700 text-lg lg:text-xl font-light leading-relaxed italic">
+							¹ {preview}
+						</p>
+						{expanded && (
+							<p className="text-yellow-700 text-lg lg:text-xl font-light leading-relaxed italic mt-3">
+								{full}
+							</p>
+						)}
+						<button
+							onClick={() => setExpanded(!expanded)}
+							className="mt-4 text-sm font-medium border border-yellow-600 text-yellow-700 rounded-full px-4 py-1.5 hover:bg-yellow-100 transition-all duration-300"
+						>
+							{expanded ? "Read less ↑" : "Read more ↓"}
+						</button>
+					</div>
+					<span
+						className="text-5xl text-yellow-600 font-serif leading-none opacity-50 animate-float"
+						style={{ animationDelay: "1.5s" }}
+					>
+						"
+					</span>
+				</div>
+			</div>
+		);
+	};
   const [showAll, setShowAll] = useState(false);
 
   const toggleExpand = (id) => {
@@ -133,7 +173,7 @@ const EulogiesSection = () => {
 
         {/* Show More Button */}
         {eulogiesData.length > 4 && (
-          <div className="text-center mt-8">
+          <div className="text-center mt-8 mb-5">
             <button
               onClick={() => setShowAll(!showAll)}
               className="px-6 py-3 bg-[#fcbb68] text-white rounded-lg hover:bg-[#e6a857] transition-colors duration-300"
@@ -144,6 +184,15 @@ const EulogiesSection = () => {
             </button>
           </div>
         )}
+				{/* Job 14:1–14 */}
+          <BibleVerseCard
+            reference="Job 14:1–14"
+            preview="Mortals, born of woman, are of few days and full of trouble. ² They spring up like flowers and wither away; like fleeting shadows, they do not endure."
+            full="³ Do you fix your eye on them? Will you bring them before you for judgment? ⁴ Who can bring what is pure from the impure? No one! ⁵ A person's days are determined; you have decreed the number of his months and have set limits he cannot exceed. ⁶ So look away from him and let him alone, till he has put in his time like a hired laborer. ⁷ At least there is hope for a tree: if it is cut down, it will sprout again, and its new shoots will not fail. ⁸ Its roots may grow old in the ground and its stump die in the soil, ⁹ yet at the scent of water it will bud and put forth shoots like a plant. ¹⁰ But a man dies and is laid low; he breathes his last and is no more. ¹¹ As waters fail from the sea, and a river wastes away and dries up, ¹² so he lies down and does not rise; till the heavens are no more, people will not awake or be roused from their sleep. ¹³ If only you would hide me in the grave and conceal me till your anger has passed! If only you would set me a time and then remember me! ¹⁴ If someone dies, will they live again? All the days of my hard service I will wait for my renewal to come."
+            delay="delay-500"
+            bg="from-orange-50 via-amber-50 to-yellow-50"
+            border="border-l-4 border-yellow-500"
+          />
         <style jsx>{`
           @keyframes fadeIn {
             from {

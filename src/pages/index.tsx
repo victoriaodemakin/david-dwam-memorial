@@ -6,7 +6,7 @@ const Main = () => {
   return (
     <>
       <Head>
-        <title>Rev David Dari Dwam Memorial | 1951-2026</title>
+        <title>Rev David Dari Dwam Memorial | 1961-2026</title>
       </Head>
       <LandingPage />
     </>

@@ -62,33 +62,77 @@ const galleryImages = [
     url: Photo5,
     alt: "David Dari Dwam at daughter wedding celebration",
   },
-  { id: 6, url: Photo6, alt: 'Olaseni Olagbaju with bride - proud father moment' },
-  { id: 7, url: Photo7, alt: 'David Dari Dwam with sons - family bond' },
-  { id: 8, url: Photo8, alt: 'Olaseni Olagbaju family gathering - generations together' },
-  { id: 9, url: Photo9, alt: 'David Dari Dwam family celebration' },
-  { id: 10, url: Photo10, alt: 'Olaseni Olagbaju with extended family members' },
-  { id: 11, url: Photo11, alt: 'David Dari Dwam daughter wedding moment' },
-  { id: 13, url: Photo13, alt: 'David Dari Dwam family outdoor gathering' },
-  { id: 14, url: Photo14, alt: 'Olaseni Olagbaju as grandfather - legacy continues' },
-  { id: 15, url: Photo15, alt: 'David Dari Dwam multi-generational family photo' },
-  { id: 16, url: Photo16, alt: 'Olaseni Olagbaju with children and grandchildren' },
-  { id: 17, url: Photo17, alt: 'David Dari Dwam with in-laws - extended family' },
-  { id: 18, url: Photo18, alt: 'Olaseni Olagbaju wedding portrait with bride' },
-  { id: 19, url: Photo19, alt: 'David Dari Dwam and wife - lifelong partners' },
-  { id: 20, url: Photo20, alt: 'Olaseni Olagbaju at son wedding - proud father' },
-  { id: 21, url: Photo21, alt: 'David Dari Dwam with wife - special moment' },
-  { id: 22, url: Photo22, alt: 'Olaseni Olagbaju with wife and son - family unit' },
-  { id: 23, url: Photo23, alt: 'David Dari Dwam with all sons together' },
-  { id: 24, url: Photo24, alt: 'Olaseni Olagbaju at wedding party celebration' },
-  { id: 25, url: Photo25, alt: 'David Dari Dwam wedding ceremony day' },
-  { id: 26, url: Photo26, alt: 'Olaseni Olagbaju traditional wedding attire' },
-  { id: 27, url: Photo27, alt: 'David Dari Dwam wedding celebration moment' },
-  { id: 28, url: Photo28, alt: 'Olaseni Olagbaju formal portrait photograph' },
-  { id: 29, url: Photo29, alt: 'David Dari Dwam with siblings - family roots' },
-  { id: 30, url: Photo30, alt: 'Olaseni Olagbaju distinguished portrait 1951-2026' },
-  { id: 31, url: Photo31, alt: 'David Dari Dwam family photograph' },
-  { id: 32, url: Photo32, alt: 'Olaseni Olagbaju and wife - enduring love' },
-  { id: 33, url: Photo33, alt: 'David Dari Dwam with brother - sibling bond' },
+  {
+    id: 6,
+    url: Photo6,
+    alt: "Olaseni Olagbaju with bride - proud father moment",
+  },
+  { id: 7, url: Photo7, alt: "David Dari Dwam with sons - family bond" },
+  {
+    id: 8,
+    url: Photo8,
+    alt: "Olaseni Olagbaju family gathering - generations together",
+  },
+  { id: 9, url: Photo9, alt: "David Dari Dwam family celebration" },
+  {
+    id: 10,
+    url: Photo10,
+    alt: "Olaseni Olagbaju with extended family members",
+  },
+  { id: 11, url: Photo11, alt: "David Dari Dwam daughter wedding moment" },
+  { id: 13, url: Photo13, alt: "David Dari Dwam family outdoor gathering" },
+  {
+    id: 14,
+    url: Photo14,
+    alt: "Olaseni Olagbaju as grandfather - legacy continues",
+  },
+  {
+    id: 15,
+    url: Photo15,
+    alt: "David Dari Dwam multi-generational family photo",
+  },
+  {
+    id: 16,
+    url: Photo16,
+    alt: "Olaseni Olagbaju with children and grandchildren",
+  },
+  {
+    id: 17,
+    url: Photo17,
+    alt: "David Dari Dwam with in-laws - extended family",
+  },
+  { id: 18, url: Photo18, alt: "Olaseni Olagbaju wedding portrait with bride" },
+  { id: 19, url: Photo19, alt: "David Dari Dwam and wife - lifelong partners" },
+  {
+    id: 20,
+    url: Photo20,
+    alt: "Olaseni Olagbaju at son wedding - proud father",
+  },
+  { id: 21, url: Photo21, alt: "David Dari Dwam with wife - special moment" },
+  {
+    id: 22,
+    url: Photo22,
+    alt: "Olaseni Olagbaju with wife and son - family unit",
+  },
+  { id: 23, url: Photo23, alt: "David Dari Dwam with all sons together" },
+  {
+    id: 24,
+    url: Photo24,
+    alt: "Olaseni Olagbaju at wedding party celebration",
+  },
+  { id: 25, url: Photo25, alt: "David Dari Dwam wedding ceremony day" },
+  { id: 26, url: Photo26, alt: "Olaseni Olagbaju traditional wedding attire" },
+  { id: 27, url: Photo27, alt: "David Dari Dwam wedding celebration moment" },
+  { id: 28, url: Photo28, alt: "Olaseni Olagbaju formal portrait photograph" },
+  { id: 29, url: Photo29, alt: "David Dari Dwam with siblings - family roots" },
+  {
+    id: 30,
+    url: Photo30,
+    alt: "Olaseni Olagbaju distinguished portrait 1961-2026",
+  },
+  { id: 31, url: Photo31, alt: "David Dari Dwam family photograph" },
+  { id: 32, url: Photo32, alt: "Olaseni Olagbaju and wife - enduring love" },
+  { id: 33, url: Photo33, alt: "David Dari Dwam with brother - sibling bond" },
 ];
 
 const Section = ({
@@ -278,7 +322,7 @@ const GalleryPage: React.FC<GalleryPageProps> = ({ onBack }) => {
             David Dari Dwam - A Life in Pictures
           </h1>
           <p className="text-lg text-gray-600 mb-4">
-            Celebrating memories from 1951 to 2026
+            Celebrating memories from 1961 to 2026
           </p>
           <div className="h-[5px] bg-gradient-to-r from-transparent via-[#fcbb68] to-transparent divider-line mx-auto rounded"></div>
         </header>

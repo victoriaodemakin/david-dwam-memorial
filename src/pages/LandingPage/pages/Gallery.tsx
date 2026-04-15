@@ -36,7 +36,6 @@ import Photo31 from "../../../../public/assets/images/paper-header-pic.jpeg";
 import Photo32 from "../../../../public/assets/images/paper-header-pic.jpeg";
 import Photo33 from "../../../../public/assets/images/paper-header-pic.jpeg";
 
-
 // SEO-Enhanced Alt Text with Full Name
 const galleryImages = [
   { id: 1, url: Photo1, alt: "David Dari Dwam wedding day with family" },
@@ -126,7 +125,7 @@ const galleryImages = [
   {
     id: 30,
     url: Photo30,
-    alt: "Olaseni Olagbaju distinguished portrait 1951-2026",
+    alt: "Olaseni Olagbaju distinguished portrait 1961-2026",
   },
   { id: 31, url: Photo31, alt: "David Dari Dwam family photograph" },
   { id: 32, url: Photo32, alt: "Olaseni Olagbaju and wife - enduring love" },
@@ -319,7 +318,7 @@ const GalleryPage: React.FC<GalleryPageProps> = ({ onBack }) => {
             David Dari Dwam - A Life in Pictures
           </h1>
           <p className="text-lg text-gray-600 mb-4">
-            Celebrating memories from 1951 to 2026
+            Celebrating memories from 1961 to 2026
           </p>
           <div className="h-[5px] bg-gradient-to-r from-transparent via-[#fcbb68] to-transparent divider-line mx-auto rounded"></div>
         </header>
@@ -404,7 +403,7 @@ const GalleryPage: React.FC<GalleryPageProps> = ({ onBack }) => {
 const Gallery: React.FC = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [showGalleryPage, setShowGalleryPage] = useState(false);
-const galleryAudioRef = useRef(null);
+  const galleryAudioRef = useRef(null);
 
   useEffect(() => {
     if (!showGalleryPage) {
@@ -427,8 +426,14 @@ const galleryAudioRef = useRef(null);
   };
 
   if (showGalleryPage) {
-// Where GalleryFullPage is rendered in Gallery
-return <GalleryFullPage onBack={() => setShowGalleryPage(false)} audioRef={galleryAudioRef} />;  }
+    // Where GalleryFullPage is rendered in Gallery
+    return (
+      <GalleryFullPage
+        onBack={() => setShowGalleryPage(false)}
+        audioRef={galleryAudioRef}
+      />
+    );
+  }
 
   return (
     <Section id="gallery" title="Gallery">
@@ -455,16 +460,17 @@ return <GalleryFullPage onBack={() => setShowGalleryPage(false)} audioRef={galle
       {/* See More Button with Animation */}
       <div className="flex justify-center mb-8">
         <button
-onClick={() => {
-  // Start audio on this user gesture before mounting GalleryFullPage
-  if (!galleryAudioRef.current) {
-    galleryAudioRef.current = new Audio("/assets/music/song.mp3");
-    galleryAudioRef.current.loop = true;
-    galleryAudioRef.current.volume = 0.6;
-  }
-  galleryAudioRef.current.play().catch(() => {});
-  setShowGalleryPage(true);
-}}          className="bg-[#fcbb68] text-black px-8 py-3 rounded-lg font-semibold hover:bg-[#e5a851] transition-all duration-300 shadow-md hover:shadow-xl hover:scale-105 transform"
+          onClick={() => {
+            // Start audio on this user gesture before mounting GalleryFullPage
+            if (!galleryAudioRef.current) {
+              galleryAudioRef.current = new Audio("/assets/music/song.mp3");
+              galleryAudioRef.current.loop = true;
+              galleryAudioRef.current.volume = 0.6;
+            }
+            galleryAudioRef.current.play().catch(() => {});
+            setShowGalleryPage(true);
+          }}
+          className="bg-[#fcbb68] text-black px-8 py-3 rounded-lg font-semibold hover:bg-[#e5a851] transition-all duration-300 shadow-md hover:shadow-xl hover:scale-105 transform"
           aria-label="View full photo gallery of David Dari Dwam"
         >
           See More Photos

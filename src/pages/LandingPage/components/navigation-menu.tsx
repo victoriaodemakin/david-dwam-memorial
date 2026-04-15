@@ -8,7 +8,7 @@ const Navigation = () => {
     "Biography",
     "Eulogies",
     "Service",
-    "Timeline",
+    // "Timeline",
     "Favorites",
     "Gallery",
     "Leave a Tribute",
