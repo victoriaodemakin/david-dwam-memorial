@@ -24,7 +24,7 @@ const eulogiesData = [
     name: "Pano Isaac David",
     title: "Son",
     message:
-      "Dad, you were an extraordinary man a soldier who became a shepherd, a father who led by example, and a pastor who never stopped caring for others. I knew you as a generous, strong, and deeply loving man who tried his best every single day to impact lives positively. The memories of who you were will never fade in my mind. You lived fully and you never gave up. We love you Dad, and we know your spirit will always be with us. May your soul rest in eternal peace. You will never be forgotten.",
+      "For many years I thought the critical life-changing choices I made came from my independence, not until the day I heard you praying secretly. You were interceding for everyone of us. You truly designed with your mind, spoke and prayed things into existence. Thank you for pointing us to Jesus, who's my Lord, master and Saviour; of whom I'm certain you are sitting with this moment. You've lived a life of service, of which I testify of from a tender age, and you have served here on earth and continue to do so up in heaven. I'll see your face again.",
     relationship: "Son",
   },
   {
