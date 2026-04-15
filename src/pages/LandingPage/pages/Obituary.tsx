@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect } from "react";
 
 const Section = ({ id, title, children }) => (
   <section id={id}>
@@ -7,40 +7,48 @@ const Section = ({ id, title, children }) => (
   </section>
 );
 
+const BibleVerseCard = ({ reference, preview, full, delay, bg, border }) => {
+  const [expanded, setExpanded] = React.useState(false);
+
+  return (
+    <div
+      className={`quote-card bg-gradient-to-br ${bg} rounded-2xl p-8 ${border} shadow-lg animate-fade-in-up ${delay}`}
+    >
+      <div className="flex items-start gap-4">
+        <span className="text-5xl text-yellow-600 font-serif leading-none opacity-50 animate-float">
+          "
+        </span>
+        <div className="flex-1">
+          <p className="text-xs font-semibold uppercase tracking-widest mb-3 text-yellow-700 opacity-70">
+            {reference}
+          </p>
+          <p className="text-yellow-700 text-lg lg:text-xl font-light leading-relaxed italic">
+            ¹ {preview}
+          </p>
+          {expanded && (
+            <p className="text-yellow-700 text-lg lg:text-xl font-light leading-relaxed italic mt-3">
+              {full}
+            </p>
+          )}
+          <button
+            onClick={() => setExpanded(!expanded)}
+            className="mt-4 text-sm font-medium border border-yellow-600 text-yellow-700 rounded-full px-4 py-1.5 hover:bg-yellow-100 transition-all duration-300"
+          >
+            {expanded ? "Read less ↑" : "Read more ↓"}
+          </button>
+        </div>
+        <span
+          className="text-5xl text-yellow-600 font-serif leading-none opacity-50 animate-float"
+          style={{ animationDelay: "1.5s" }}
+        >
+          "
+        </span>
+      </div>
+    </div>
+  );
+};
 const Obituary = () => {
-  useEffect(() => {
-    // SEO Meta Tags
-    document.title = "Olaseni Babatunde Olagbaju (1951-2025) - Obituary & Life Tribute";
-    
-    const metaDescription = document.querySelector('meta[name="description"]') || document.createElement('meta');
-    metaDescription.name = "description";
-    metaDescription.content = "Honoring the life and legacy of Olaseni Babatunde Olagbaju (1951-2025). A tribute to a remarkable life of generosity, community impact, and unwavering kindness.";
-    if (!document.querySelector('meta[name="description"]')) {
-      document.head.appendChild(metaDescription);
-    }
 
-    const metaKeywords = document.querySelector('meta[name="keywords"]') || document.createElement('meta');
-    metaKeywords.name = "keywords";
-    metaKeywords.content = "Olaseni Babatunde Olagbaju, obituary, tribute, memorial, OAU, Obafemi Awolowo University, Rotunda, legacy";
-    if (!document.querySelector('meta[name="keywords"]')) {
-      document.head.appendChild(metaKeywords);
-    }
-
-    // Open Graph tags
-    const ogTitle = document.querySelector('meta[property="og:title"]') || document.createElement('meta');
-    ogTitle.setAttribute('property', 'og:title');
-    ogTitle.content = "In Loving Memory of Olaseni Babatunde Olagbaju";
-    if (!document.querySelector('meta[property="og:title"]')) {
-      document.head.appendChild(ogTitle);
-    }
-
-    const ogDescription = document.querySelector('meta[property="og:description"]') || document.createElement('meta');
-    ogDescription.setAttribute('property', 'og:description');
-    ogDescription.content = "A celebration of the extraordinary life of Olaseni Babatunde Olagbaju (1951-2025)";
-    if (!document.querySelector('meta[property="og:description"]')) {
-      document.head.appendChild(ogDescription);
-    }
-  }, []);
 
   return (
     <Section id="biography" title="">
@@ -182,18 +190,25 @@ const Obituary = () => {
         }
       `}</style>
 
-      <article itemScope itemType="https://schema.org/Person" className="max-w-4xl mx-auto px-4 py-8">
+      <article
+        itemScope
+        itemType="https://schema.org/Person"
+        className="max-w-4xl mx-auto px-4 py-8"
+      >
         {/* Schema.org structured data */}
-        <meta itemProp="name" content="Olaseni Babatunde Olagbaju" />
+        <meta itemProp="name" content="David Dari Dwam" />
         <meta itemProp="birthDate" content="1951-04-24" />
-        <meta itemProp="deathDate" content="2025-09-28" />
-        <meta itemProp="deathPlace" content="Newham University Hospital, London" />
+        <meta itemProp="deathDate" content="2026-09-28" />
+        <meta
+          itemProp="deathPlace"
+          content="Newham University Hospital, London"
+        />
         <meta itemProp="alumniOf" content="Obafemi Awolowo University" />
 
         {/* Top Honor Section */}
         <header className="text-center mb-12 bg-gradient-to-b from-white to-orange-50 py-9 rounded-lg animate-fade-in">
           <p className="text-sm text-gray-600 mb-4 tracking-wide animate-fade-in-up delay-100">
-            Honoring Olaseni Babatunde Olagbaju
+            Honoring Rev David Dari Dwam
           </p>
           <div className="flex items-start justify-center gap-4 max-w-3xl mx-auto animate-fade-in-up delay-200">
             <span className="text-6xl text-yellow-600 font-serif leading-none animate-slide-in-left">
@@ -217,94 +232,98 @@ const Obituary = () => {
         {/* Legacy Section */}
         <div className="text-center mb-8 animate-fade-in-up delay-400">
           <p className="text-sm text-gray-600 mb-2 tracking-wide">
-            A Tribute to the Life and Legacy of Olaseni Babatunde Olagbaju (1951–2025)
+            A Tribute to the Life and Legacy of David Dari Dwam (1951–2026)
           </p>
-            <h1 className="text-3xl lg:text-4xl font-bold text-black mb-4">A Life Well Lived</h1>
+          <h1 className="text-3xl lg:text-4xl font-bold text-black mb-4">
+            A Life Well Lived
+          </h1>
           <div className="h-[5px] bg-gradient-to-r from-transparent via-[#fcbb68] to-transparent divider-line mx-auto rounded"></div>
         </div>
 
         {/* Biography Content */}
-        <div className="text-gray-900 font-light leading-relaxed space-y-4 mb-12">
-          {/* First paragraph with drop cap */}
-          <p className="mb-4 paragraph-hover animate-fade-in-up delay-500">
-            <span className="float-left text-7xl font-serif leading-none mr-3 mt-1 text-gray-900 drop-cap-animated">
-              T
-            </span>
-            <span className="inline" itemProp="description">
-              he world dimmed on Sunday, September 28, 2025, when Olaseni Babatunde Olagbaju was called home to glory at Newham University Hospital, London. He departs from us, leaving behind a profound legacy of uncommon generosity, deep care, and unique impact.
-            </span>
-          </p>
+       <div className="text-gray-900 font-light leading-relaxed space-y-4 mb-12">
+  {/* First paragraph with drop cap */}
+  <p className="mb-4 paragraph-hover animate-fade-in-up delay-500">
+    <span className="float-left text-7xl font-serif leading-none mr-3 mt-1 text-gray-900 drop-cap-animated">
+      I
+    </span>
+    <span className="inline" itemProp="description">
+      t is with hearts full of grief and gratitude that we announce the passing of
+      Reverend David Dari Dwam, who was called home to glory on Wednesday, April 8, 2026.
+      He departs from us leaving behind a profound legacy of faith, service, and
+      uncommon devotion — a man who served his nation in uniform, and then spent
+      the rest of his life serving his God and his people.
+    </span>
+  </p>
 
-          <p className="mb-4 clear-left paragraph-hover animate-fade-in-up delay-600">
-            Born on June 24, 1951, to Joseph Oladimeji Olagbaju and Princess Mobolaji Olagbaju (née Ademiluyi), Olaseni was the cherished second child in a dynamic family of nine. His foundational years were spent at St Stephen A, Ile Ife (1957–1963) and Molusi College, Ijebu Igbo (1963–1968), where the seeds of his intellectual curiosity were first sown. His passion led him to Obafemi Awolowo University (OAU), where he graduated in 1974 with a BSc in Microbiology.
-          </p>
+  <p className="mb-4 clear-left paragraph-hover animate-fade-in-up delay-600">
+    Born on September 25, 1951, David Dari Dwam was a proud son of Adamawa, rooted in the
+    rich culture and community of his people. From an early age, he carried himself
+    with discipline and purpose. He answered the call of duty by enlisting in the
+    Nigerian Navy, where he served with honour and distinction before retiring as a
+    proud veteran. His years of service instilled in him a lifelong commitment to
+    integrity, loyalty, and selfless giving.
+  </p>
 
-          <p className="mb-4 paragraph-hover animate-fade-in-up delay-100">
-            However, Olaseni's greatest impact on campus extended beyond the classroom: when he returned to famously managed and ran Rotunda, an iconic building that served as the energetic hub of student life and the nascent tech scene at OAU. It was here that he cultivated connections and mentored others, embodying the community spirit that defined him. He moved to the UK in 1988.
-          </p>
+  <p className="mb-4 paragraph-hover animate-fade-in-up delay-100">
+    After his retirement from the Navy, David Dari Dwam answered a higher calling.
+    He surrendered his life fully to the service of God, was ordained as a Reverend,
+    and devoted himself wholeheartedly to pastoral ministry. As a pastor, he was
+    a shepherd in the truest sense — tending to his flock with compassion, preaching
+    the Word with conviction, and walking faithfully alongside those in his care.
+    To many, he was not just a pastor but a father, a counsellor, and a friend.
+  </p>
 
-          <p className="paragraph-hover animate-fade-in-up delay-200">
-            Throughout his 74 years, Olaseni was a magnetic force. His unique spirit touched the lives of all who knew him; his generosity knew no bounds. He truly connected with people. While the loss is immeasurable for the family he leaves behind, we take comfort in the knowledge that to all who knew him, Olaseni was more than a friend or family member; he was a force of positive impact, his generosity touching and transforming countless lives. His unique spirit will be deeply missed, but the profound legacy of his kindness remains etched in the hearts of all who have crossed his path.
-          </p>
+  <p className="paragraph-hover animate-fade-in-up delay-200">
+    Throughout his 74 years, Rev David Dari Dwam was a magnetic and towering presence
+    wherever he went. Whether in the barracks or the pulpit, he led with grace and
+    governed with love. His beloved wife, children, family, and congregation now
+    mourn a man who was their anchor. While the loss is immeasurable, we take
+    comfort in knowing that he lived fully, loved deeply, and finished his race with
+    faith intact. The seeds of kindness, wisdom, and godly character he planted in
+    countless lives will continue to bear fruit for generations to come.
+  </p>
 
-          <p className="my-3 text-center text-lg italic animate-fade-in-up delay-300">
-            May the blessings of a life well-lived accompany Olaseni into eternal rest.
-          </p>
-        </div>
+  <p className="my-3 text-center text-lg italic animate-fade-in-up delay-300">
+    Beloved Husband, Father, Brother, Uncle, and Pastor — may the blessings of a
+    life well-lived and faithfully served accompany Rev David Dari Dwam into eternal rest.
+  </p>
+</div>
 
-        {/* Yoruba Tributes Section - Stacked and Visually Enhanced */}
-        <div className="space-y-6 mb-8">
-          {/* First Tribute */}
-          <div className="quote-card bg-gradient-to-br from-amber-50 via-orange-50 to-yellow-50 rounded-2xl p-8 border-l-4 border-yellow-600 shadow-lg animate-fade-in-up delay-400">
-            <div className="flex items-start gap-4">
-              <span className="text-5xl text-yellow-600 font-serif leading-none opacity-50 animate-float">
-                "
-              </span>
-              <div className="flex-1">
-                <p className="text-yellow-700 text-lg lg:text-xl font-light leading-relaxed mb-2 italic">
-                  Ọmọ a bọ̀kẹ́ ìpàkọ́ wọlé sọya rọ̀rọ̀, sọkọ sọkọ n'mọgun baba Ògúntúwàsé, olóyè ní yègbéyèbé Ọmọ Adéyẹmí. Pọpọtan bí egbe Ọmọ ọlọ mìíràn.
-                </p>
-              </div>
-              <span className="text-5xl text-yellow-600 font-serif leading-none opacity-50 animate-float" style={{animationDelay: '1.5s'}}>
-                "
-              </span>
-            </div>
-          </div>
+        {/* Bible Reading Section - Stacked and Visually Enhanced */}
+<div className="space-y-6 mb-8">
 
-          {/* Second Tribute */}
-          <div className="quote-card bg-gradient-to-br from-orange-50 via-amber-50 to-yellow-50 rounded-2xl p-8 border-l-4 border-yellow-500 shadow-lg animate-fade-in-up delay-500">
-            <div className="flex items-start gap-4">
-              <span className="text-5xl text-yellow-600 font-serif leading-none opacity-50 animate-float" style={{animationDelay: '0.5s'}}>
-                "
-              </span>
-              <div className="flex-1">
-                <p className="text-yellow-700 text-lg lg:text-xl font-light leading-relaxed mb-2 italic">
-                  Àwùsì, Mọ́rìlówú, Ọmọ aréwà, Ọmọ ajírí ilé, Ọmọ olókè ọ̀nà, Ọmọ Àfí Kàràhún fò rí mu, Ọmọ Ládìméjì Àrìfí, Ọmọ Igbó Tapa.
-                </p>
-              </div>
-              <span className="text-5xl text-yellow-600 font-serif leading-none opacity-50 animate-float" style={{animationDelay: '2s'}}>
-                "
-              </span>
-            </div>
-          </div>
+  {/* 1 Thessalonians 4:13–18 */}
+  <BibleVerseCard
+    reference="1 Thessalonians 4:13–18"
+    preview="Brothers and sisters, we do not want you to be uninformed about those who sleep in death, so that you do not grieve like the rest of mankind, who have no hope."
+    full="¹⁴ For we believe that Jesus died and rose again, and so we believe that God will bring with Jesus those who have fallen asleep in him. ¹⁵ According to the Lord's word, we tell you that we who are still alive, who are left until the coming of the Lord, will certainly not precede those who have fallen asleep. ¹⁶ For the Lord himself will come down from heaven, with a loud command, with the voice of the archangel and with the trumpet call of God, and the dead in Christ will rise first. ¹⁷ After that, we who are still alive and are left will be caught up together with them in the clouds to meet the Lord in the air. And so we will be with the Lord forever. ¹⁸ Therefore encourage one another with these words."
+    delay="delay-400"
+    bg="from-amber-50 via-orange-50 to-yellow-50"
+    border="border-l-4 border-yellow-600"
+  />
 
-          {/* Final Tribute - Featured */}
-          <div className="quote-card bg-gradient-to-br from-yellow-100 via-amber-100 to-orange-100 rounded-2xl p-10 border-2 border-yellow-600 shadow-2xl animate-fade-in-up delay-600">
-            <div className="flex items-start gap-4">
-              <span className="text-6xl text-yellow-700 font-serif leading-none opacity-60 animate-float" style={{animationDelay: '1s'}}>
-                "
-              </span>
-     <div>
-                
-                <p className="font-light text-center text-sm tracking-wider uppercase">
-Olásèní Ọmọ Ọlágbájú, Rìyánlọlá Dúbíọ́ndé. Sùn rẹ o!                </p>
-              </div>
-              <span className="text-6xl text-yellow-700 font-serif leading-none opacity-60 animate-float" style={{animationDelay: '2.5s'}}>
-                "
-              </span>
-            </div>
-          </div>
-        </div>
+  {/* Job 14:1–14 */}
+  <BibleVerseCard
+    reference="Job 14:1–14"
+    preview="Mortals, born of woman, are of few days and full of trouble. ² They spring up like flowers and wither away; like fleeting shadows, they do not endure."
+    full="³ Do you fix your eye on them? Will you bring them before you for judgment? ⁴ Who can bring what is pure from the impure? No one! ⁵ A person's days are determined; you have decreed the number of his months and have set limits he cannot exceed. ⁶ So look away from him and let him alone, till he has put in his time like a hired laborer. ⁷ At least there is hope for a tree: if it is cut down, it will sprout again, and its new shoots will not fail. ⁸ Its roots may grow old in the ground and its stump die in the soil, ⁹ yet at the scent of water it will bud and put forth shoots like a plant. ¹⁰ But a man dies and is laid low; he breathes his last and is no more. ¹¹ As waters fail from the sea, and a river wastes away and dries up, ¹² so he lies down and does not rise; till the heavens are no more, people will not awake or be roused from their sleep. ¹³ If only you would hide me in the grave and conceal me till your anger has passed! If only you would set me a time and then remember me! ¹⁴ If someone dies, will they live again? All the days of my hard service I will wait for my renewal to come."
+    delay="delay-500"
+    bg="from-orange-50 via-amber-50 to-yellow-50"
+    border="border-l-4 border-yellow-500"
+  />
+
+  {/* Ecclesiastes 3:1–8 */}
+  <BibleVerseCard
+    reference="Ecclesiastes 3:1–8"
+    preview="There is a time for everything, and a season for every activity under the heavens: ² a time to be born and a time to die, a time to plant and a time to uproot,"
+    full="³ a time to kill and a time to heal, a time to tear down and a time to build, ⁴ a time to weep and a time to laugh, a time to mourn and a time to dance, ⁵ a time to scatter stones and a time to gather them, a time to embrace and a time to refrain from embracing, ⁶ a time to search and a time to give up, a time to keep and a time to throw away, ⁷ a time to tear and a time to mend, a time to be silent and a time to speak, ⁸ a time to love and a time to hate, a time for war and a time for peace."
+    delay="delay-600"
+    bg="from-yellow-100 via-amber-100 to-orange-100"
+    border="border-2 border-yellow-600"
+  />
+
+</div>
       </article>
     </Section>
   );

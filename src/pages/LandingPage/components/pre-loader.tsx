@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect } from "react";
 
 // Enhanced Loader Component with SEO and Animations
 const Loader = ({ onLoadComplete }: { onLoadComplete: () => void }) => {
@@ -22,9 +22,9 @@ const Loader = ({ onLoadComplete }: { onLoadComplete: () => void }) => {
   }, [onLoadComplete]);
 
   return (
-    <div 
+    <div
       className={`fixed inset-0 z-50 flex items-center justify-center bg-gradient-to-br from-gray-50 via-white to-gray-100 transition-opacity duration-500 ${
-        fadeOut ? 'opacity-0' : 'opacity-100'
+        fadeOut ? "opacity-0" : "opacity-100"
       }`}
       role="progressbar"
       aria-label="Loading memorial page"
@@ -40,15 +40,14 @@ const Loader = ({ onLoadComplete }: { onLoadComplete: () => void }) => {
         <div className="space-y-2">
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold uppercase overflow-hidden">
             <span className="inline-block animate-slide-up animation-delay-100">
-              Olaseni
-            </span>
-            {' '}
+              Rev David
+            </span>{" "}
             <span className="inline-block animate-slide-up animation-delay-200">
-              Babatunde
+              Dari
             </span>
             <br />
             <span className="inline-block animate-slide-up animation-delay-300">
-              Olagbaju
+              Dwam
             </span>
           </h1>
 
@@ -61,7 +60,7 @@ const Loader = ({ onLoadComplete }: { onLoadComplete: () => void }) => {
 
           {/* Subtitle with fade-in */}
           <p className="text-lg md:text-xl text-gray-600 mt-6 animate-fade-in animation-delay-500 font-light">
-            1951 - 2025
+            1951 - 2026
           </p>
           <p className="text-sm md:text-base text-gray-500 animate-fade-in animation-delay-600 italic">
             In Loving Memory
@@ -150,7 +149,8 @@ const Loader = ({ onLoadComplete }: { onLoadComplete: () => void }) => {
         }
 
         @keyframes pulseSlow {
-          0%, 100% {
+          0%,
+          100% {
             opacity: 0.03;
             transform: translate(-50%, -50%) scale(1);
           }

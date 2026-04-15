@@ -1,15 +1,17 @@
-import Script from 'next/script';
+import Script from "next/script";
 
 const StructuredData = () => {
   const structuredData = {
     "@context": "https://schema.org",
     "@type": "Person",
-    "name": "Olaseni Babatunde Olagbaju",
-    "birthDate": "1951",
-    "deathDate": "2025",
-    "description": "Beloved father, leader, and inspiration. Memorial site celebrating his life and legacy.",
-    "image": "https://olaseni-memorial.netlify.app/assets/images/Olaseni-Babatunde-Olagbaju-4.jpg",
-    "url": "https://olaseni-memorial.netlify.app/"
+    name: "David Dari Dwam",
+    birthDate: "1951",
+    deathDate: "2026",
+    description:
+      "Beloved father, leader, and inspiration. Memorial site celebrating his life and legacy.",
+    image:
+      "https://olaseni-memorial.netlify.app/assets/images/Olaseni-Babatunde-Olagbaju-4.jpg",
+    url: "https://olaseni-memorial.netlify.app/",
   };
 
   return (

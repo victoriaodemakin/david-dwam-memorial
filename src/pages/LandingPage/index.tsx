@@ -28,7 +28,7 @@ export default function MemorialPage() {
           <Eulogies />
           <Timeline />
 					<Favorites />
-          <Gallery />
+          {/* <Gallery /> */}
           <MemoryWall />
 					<Funeral/>
           <Service />

@@ -20,11 +20,11 @@ const Favorites = () => (
         <div className="flex items-center gap-2 mb-3">
           <MessageCircle size={20} style={{ color: '#deac6c' }} />
           <h3 className="font-medium text-base" style={{ color: '#deac6c' }}>
-            What was Olaseni's favorite Saying?
+            What was Rev David Dari Dwam's favorite Saying?
           </h3>
         </div>
         <p className="text-gray-700 text-sm leading-relaxed">
-          "Don’t worry about it"<br />
+          "Truly God is faithful he cannot lie"<br />
         </p>
       </div>
 
@@ -33,7 +33,7 @@ const Favorites = () => (
         <div className="flex items-center gap-2 mb-3">
           <Book size={20} style={{ color: '#deac6c' }} />
           <h3 className="font-medium text-base" style={{ color: '#deac6c' }}>
-            What was Olaseni's favorite food?
+            What was Rev David Dari Dwam's favorite Book?
           </h3>
         </div>
         <p className="text-gray-700 text-sm leading-relaxed">
@@ -45,7 +45,7 @@ Yam and corn beef stew and plantain        </p>
         <div className="flex items-center gap-2 mb-3">
           <Film size={20} style={{ color: '#deac6c' }} />
           <h3 className="font-medium text-base" style={{ color: '#deac6c' }}>
-            What was Olaseni's favorite Movie?
+            What was Rev David's favorite Movie?
           </h3>
         </div>
         <p className="text-gray-700 text-sm leading-relaxed">
@@ -57,11 +57,11 @@ Goodfellas and The Godfather         </p>
         <div className="flex items-center gap-2 mb-3">
           <Plane size={20} style={{ color: '#deac6c' }} />
           <h3 className="font-medium text-base" style={{ color: '#deac6c' }}>
-            What was Olaseni's favorite song?
+            What was Rev David Dari Dwam's favorite song?
           </h3>
         </div>
         <p className="text-gray-700 text-sm leading-relaxed">
-The Temptations - Papa was a rolling stone        </p>
+Grace is your faithfulness        </p>
       </div>
 
       {/* Favorite Color
@@ -82,11 +82,11 @@ The Temptations - Papa was a rolling stone        </p>
         <div className="flex items-center gap-2 mb-3">
           <Info size={20} style={{ color: '#deac6c' }} />
           <h3 className="font-medium text-base" style={{ color: '#deac6c' }}>
-            Fun fact about Olaseni:
+            Fun fact about Rev David Dari Dwam:
           </h3>
         </div>
         <p className="text-gray-700 text-sm leading-relaxed ">
-He loved to cook & was great at using a map to get to anywhere in London!        </p>
+He loved to cook!        </p>
       </div>
     </div>
   </Section>

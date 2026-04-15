@@ -3,14 +3,16 @@ import React, { useState } from "react";
 import { MapPin, Calendar, Video, Users, Phone } from "lucide-react";
 
 const Service = () => {
-
-
   return (
     <Section id="service" title="">
       <div className="text-center mb-12">
-        <p className="text-sm text-gray-600 mb-2 tracking-wide">In His Loving Memory</p>
-        <h2 className="text-3xl lg:text-4xl font-bold text-black mb-4">Where We Gather to Remember</h2>
-          <div className="h-[5px] bg-gradient-to-r from-transparent via-[#fcbb68] to-transparent divider-line mx-auto rounded"></div>
+        <p className="text-sm text-gray-600 mb-2 tracking-wide">
+          In His Loving Memory
+        </p>
+        <h2 className="text-3xl lg:text-4xl font-bold text-black mb-4">
+          Where We Gather to Remember
+        </h2>
+        <div className="h-[5px] bg-gradient-to-r from-transparent via-[#fcbb68] to-transparent divider-line mx-auto rounded"></div>
       </div>
 
       <div className="max-w-7xl mx-auto px-4">
@@ -23,7 +25,7 @@ const Service = () => {
                 width="100%"
                 height="100%"
                 style={{ border: 0 }}
-                allowFullScreen= {true}
+                allowFullScreen={true}
                 loading="lazy"
                 title="Service Location Map"
               ></iframe>
@@ -38,16 +40,21 @@ const Service = () => {
               </p>
 
               <p className="text-gray-700 font-light leading-relaxed">
-                We invite you to join us in a solemn gathering as we come together to celebrate the life of our beloved Olaseni Babatunde Olagbaju .                 Your presence would mean a great deal to us as we remember and honor the legacy of a remarkable friend, husband, father, grandfather.
-
+                We invite you to join us in a solemn gathering as we come
+                together to celebrate the life of our beloved Rev David Dari Dwam .
+                Your presence would mean a great deal to us as we remember and
+                honor the legacy of our beloved Husband, Father, Brother, Uncle and Pastor.
               </p>
 
               <p className="text-gray-700 font-light leading-relaxed">
-                In this moment of remembrance, let us come together to share our fond memories, offer our support to one another, and bid farewell to a truly exceptional individual.
+                In this moment of remembrance, let us come together to share our
+                fond memories, offer our support to one another, and bid
+                farewell to a truly exceptional individual.
               </p>
 
               <p className="text-gray-700 font-light leading-relaxed">
-                Please join us in commemorating Olaseni's life and the positive impact he had on all of us.
+                Please join us in commemorating Rev David Dari Dwam's life and the positive
+                impact he had on all of us.
               </p>
             </div>
 
@@ -55,60 +62,87 @@ const Service = () => {
             <div className="space-y-4 pt-4">
               {/* Location */}
               <div className="flex items-start gap-3">
-                <MapPin className="w-5 h-5 flex-shrink-0 mt-1" style={{ color: '#deac6c' }} />
+                <MapPin
+                  className="w-5 h-5 flex-shrink-0 mt-1"
+                  style={{ color: "#deac6c" }}
+                />
                 <div>
-                  <p className="font-medium" style={{ color: '#deac6c' }}>Location</p>
-                  <p className="text-gray-700 font-light">East London Crematorium</p>
-                  <p className="text-gray-700 font-light">Grange Road, Plaistow</p>
-                  <p className="text-gray-700 font-light">Newham, London E13 0HB</p>
+                  <p className="font-medium" style={{ color: "#deac6c" }}>
+                    Location
+                  </p>
+                  <p className="text-gray-700 font-light">
+                   365 Ojo Igbede Road,
+                  </p>
+                  <p className="text-gray-700 font-light">
+                   Ajangbadi Ojo Lagos
+                  </p>
+                 
                 </div>
               </div>
 
               {/* Date/Time */}
               <div className="flex items-start gap-3">
-                <Calendar className="w-5 h-5 flex-shrink-0 mt-1" style={{ color: '#deac6c' }} />
+                <Calendar
+                  className="w-5 h-5 flex-shrink-0 mt-1"
+                  style={{ color: "#deac6c" }}
+                />
                 <div>
-                  <p className="font-medium" style={{ color: '#deac6c' }}>Date/Time</p>
-                  <p className="text-gray-700 font-light">November 27, 2025</p>
-                  <p className="text-gray-700 font-light">11:00 AM</p>
+                  <p className="font-medium" style={{ color: "#deac6c" }}>
+                    Date/Time
+                  </p>
+                  <p className="text-gray-700 font-light">Wed 15, April 2026</p>
+                  <p className="text-gray-700 font-light">4:00 PM</p>
                 </div>
               </div>
 
               {/* Virtual Event */}
-            {/* Virtual Event */}
-<div className="flex items-start gap-3">
-  <Video className="w-5 h-5 flex-shrink-0 mt-1" style={{ color: '#deac6c' }} />
-  <div>
-    <p className="font-medium" style={{ color: '#deac6c' }}>Join Virtually</p>
-    <p className="text-gray-700 mb-2 font-light">Unable to attend in person? Join us via live stream</p>
-    <a 
-      href="https://watch.obitus.com" 
-      target="_blank"
-      rel="noopener noreferrer"
-      className="text-[#deac6c] hover:underline font-medium"
-    >
-      Click here to join live stream →
-    </a>
-    <div className="mt-3 space-y-1">
-      <p className="text-gray-700 font-light"><span className="font-medium">Username:</span> taya4578</p>
-      <p className="text-gray-700 font-light"><span className="font-medium">Pin:</span> 264335</p>
-      <p className="text-gray-600 text-sm italic mt-2">Please be patient as the stream loads. Live streaming will start at 10:56 AM.</p>
-    </div>
-  </div>
-</div>
+              {/* Virtual Event */}
+              <div className="flex items-start gap-3">
+                <Video
+                  className="w-5 h-5 flex-shrink-0 mt-1"
+                  style={{ color: "#deac6c" }}
+                />
+                <div>
+                  <p className="font-medium" style={{ color: "#deac6c" }}>
+                    Join Virtually
+                  </p>
+                  <p className="text-gray-700 mb-2 font-light">
+                    Unable to attend in person? Join us via live stream
+                  </p>
+                  <a
+                    href="https://watch.obitus.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-[#deac6c] hover:underline font-medium"
+                  >
+                    Click here to join live stream →
+                  </a>
+                
+                </div>
+              </div>
 
               {/* RSVP Contact */}
               <div className="flex items-start gap-3">
-                <Phone className="w-5 h-5 flex-shrink-0 mt-1" style={{ color: '#deac6c' }} />
+                <Phone
+                  className="w-5 h-5 flex-shrink-0 mt-1"
+                  style={{ color: "#deac6c" }}
+                />
                 <div>
-                  <p className="font-medium" style={{ color: '#deac6c' }}>RSVP</p>
-                  <p className="text-gray-700 font-light">Please contact Joseph Olagbaju</p>
-                  <a href="tel:07770056250" className="text-[#deac6c] hover:underline font-medium">07770 056250</a>
+                  <p className="font-medium" style={{ color: "#deac6c" }}>
+                    RSVP
+                  </p>
+                  <p className="text-gray-700 font-light">
+                    Please contact David Amsami 
+                  </p>
+                  <a
+                    href="tel:07770056250"
+                    className="text-[#deac6c] hover:underline font-medium"
+                  >
+                    08104796005
+                  </a>
                 </div>
               </div>
             </div>
-
-         
           </div>
         </div>
       </div>

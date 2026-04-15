@@ -1,46 +1,48 @@
-import React, { useState, useEffect } from 'react';
-import { Menu, X } from 'lucide-react';
+import React, { useState, useEffect } from "react";
+import { Menu, X } from "lucide-react";
 const Navigation = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   const menuItems = [
-    'Biography',
-    'Eulogies',
-    'Service',
-    'Timeline',
-		'Favorites',
-    'Gallery',
-		'Funeral Pictures',
-    'Leave a Tribute',
+    "Biography",
+    "Eulogies",
+    "Service",
+    "Timeline",
+    "Favorites",
+    "Gallery",
+    "Funeral Pictures",
+    "Leave a Tribute",
   ];
 
   useEffect(() => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 100);
     };
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
- const scrollToSection = (section: string) => {
-  const element = document.getElementById(section.toLowerCase().replace(/ /g, '-'));
-  if (element) {
-    element.scrollIntoView({ behavior: 'smooth' });
-    setIsMobileMenuOpen(false);
-  }
-};
+  const scrollToSection = (section: string) => {
+    const element = document.getElementById(
+      section.toLowerCase().replace(/ /g, "-"),
+    );
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+      setIsMobileMenuOpen(false);
+    }
+  };
   return (
     <>
       <nav
         className={`fixed top-0 left-0 right-0 z-40 transition-all duration-300 ${
-          isScrolled ? 'bg-white shadow-md py-4' : 'bg-transparent py-6'
+          isScrolled ? "bg-white shadow-md py-4" : "bg-transparent py-6"
         }`}
       >
         <div className="container mx-auto px-4 flex items-center justify-between">
           <div className="bg-black text-white px-6 py-3 font-serif">
             <p className="text-sm font-light">In Memory of</p>
-            <p className="font-bold">Olaseni Babatunde Olagbaju</p>
+            <p className="font-bold">David Dari Dwam</p>
           </div>
 
           {/* Desktop Menu */}
@@ -69,14 +71,11 @@ const Navigation = () => {
       {/* Mobile Menu Slide */}
       <div
         className={`fixed top-0 left-0 h-full w-64 bg-white shadow-xl z-50 transform transition-transform duration-300 ${
-          isMobileMenuOpen ? 'translate-x-0' : '-translate-x-full'
+          isMobileMenuOpen ? "translate-x-0" : "-translate-x-full"
         } lg:hidden`}
       >
         <div className="p-6">
-          <button
-            onClick={() => setIsMobileMenuOpen(false)}
-            className="mb-8"
-          >
+          <button onClick={() => setIsMobileMenuOpen(false)} className="mb-8">
             <X size={24} />
           </button>
           <div className="flex flex-col space-y-4">

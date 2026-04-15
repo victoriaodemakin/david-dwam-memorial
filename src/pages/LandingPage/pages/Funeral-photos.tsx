@@ -1,12 +1,13 @@
-import React, { useState, useEffect, useRef } from 'react';
-import { ChevronLeft, ChevronRight } from 'lucide-react';
-import GalleryFullPage from '../../Album/index'; // adjust path as needed
+import React, { useState, useEffect, useRef } from "react";
+import { ChevronLeft, ChevronRight } from "lucide-react";
+import GalleryFullPage from "../../Album/index"; // adjust path as needed
 import Image from "next/image";
-import  Photo1 from "../../../../public/assets/images/Olasen-burial-code-3.jpeg"
-import Photo2 from "../../../../public/assets/images/Olaseni-burial-code-2.jpeg"
-import  Photo3 from "../../../../public/assets/images/Olaseni-burial-code.jpeg"
-import  Photo4 from "../../../../public/assets/images/Olaseni-burial-4.jpeg"
-import  Photo5 from "../../../../public/assets/images/Olaseni-burial-5.jpeg"
+
+import Photo1 from "../../../../public/assets/images/paper-header-pic.jpeg";
+import Photo2 from "../../../../public/assets/images/paper-header-pic.jpeg";
+import Photo3 from "../../../../public/assets/images/paper-header-pic.jpeg";
+import Photo4 from "../../../../public/assets/images/paper-header-pic.jpeg";
+import Photo5 from "../../../../public/assets/images/paper-header-pic.jpeg";
 // import Photo7 from "../../../../public/assets/images/daddy-sons.jpg"
 // import Photo6 from "../../../../public/assets/images/daddy-bride-2.jpg"
 // import Photo8 from "../../../../public/assets/images/daddy-family.jpg"
@@ -32,51 +33,73 @@ import  Photo5 from "../../../../public/assets/images/Olaseni-burial-5.jpeg"
 // import Photo29 from "../../../../public/assets/images/daddy-silbings.jpg"
 
 // import Photo30 from "../../../../public/assets/images/Olaseni-Babatunde-Olagbaju-4.jpg"
-// import Photo31 from "../../../../public/assets/images/WhatsApp Image 2025-11-18 at 21.36.48_6dcbae00.jpg"
+// import Photo31 from "../../../../public/assets/images/WhatsApp Image 2026-11-18 at 21.36.48_6dcbae00.jpg"
 // import Photo32 from "../../../../public/assets/images/daddy-mummy-4.jpg"
 // import Photo33 from "../../../../public/assets/images/daddy-brother.jpg"
 
-
 // SEO-Enhanced Alt Text with Full Name
 const galleryImages = [
-  { id: 1, url: Photo1, alt: 'Olaseni Babatunde Olagbaju wedding day with family' },
-  { id: 2, url: Photo2, alt: 'Olaseni Olagbaju with wife - cherished moment together' },
-  { id: 3, url: Photo3, alt: 'Olaseni Babatunde Olagbaju with child - father and son bond',  objectFit: "contain"},
-  { id: 4, url: Photo4, alt: 'Olaseni Olagbaju portrait - distinguished gentleman',  objectFit: "contain" },
-  { id: 5, url: Photo5, alt: 'Olaseni Babatunde Olagbaju at daughter wedding celebration' },
+  { id: 1, url: Photo1, alt: "David Dari Dwam wedding day with family" },
+  {
+    id: 2,
+    url: Photo2,
+    alt: "Olaseni Olagbaju with wife - cherished moment together",
+  },
+  {
+    id: 3,
+    url: Photo3,
+    alt: "David Dari Dwam with child - father and son bond",
+    objectFit: "contain",
+  },
+  {
+    id: 4,
+    url: Photo4,
+    alt: "Olaseni Olagbaju portrait - distinguished gentleman",
+    objectFit: "contain",
+  },
+  {
+    id: 5,
+    url: Photo5,
+    alt: "David Dari Dwam at daughter wedding celebration",
+  },
   // { id: 6, url: Photo6, alt: 'Olaseni Olagbaju with bride - proud father moment' },
-  // { id: 7, url: Photo7, alt: 'Olaseni Babatunde Olagbaju with sons - family bond' },
+  // { id: 7, url: Photo7, alt: 'David Dari Dwam with sons - family bond' },
   // { id: 8, url: Photo8, alt: 'Olaseni Olagbaju family gathering - generations together' },
-  // { id: 9, url: Photo9, alt: 'Olaseni Babatunde Olagbaju family celebration' },
+  // { id: 9, url: Photo9, alt: 'David Dari Dwam family celebration' },
   // { id: 10, url: Photo10, alt: 'Olaseni Olagbaju with extended family members' },
-  // { id: 11, url: Photo11, alt: 'Olaseni Babatunde Olagbaju daughter wedding moment' },
-  // { id: 13, url: Photo13, alt: 'Olaseni Babatunde Olagbaju family outdoor gathering' },
+  // { id: 11, url: Photo11, alt: 'David Dari Dwam daughter wedding moment' },
+  // { id: 13, url: Photo13, alt: 'David Dari Dwam family outdoor gathering' },
   // { id: 14, url: Photo14, alt: 'Olaseni Olagbaju as grandfather - legacy continues' },
-  // { id: 15, url: Photo15, alt: 'Olaseni Babatunde Olagbaju multi-generational family photo' },
+  // { id: 15, url: Photo15, alt: 'David Dari Dwam multi-generational family photo' },
   // { id: 16, url: Photo16, alt: 'Olaseni Olagbaju with children and grandchildren' },
-  // { id: 17, url: Photo17, alt: 'Olaseni Babatunde Olagbaju with in-laws - extended family' },
+  // { id: 17, url: Photo17, alt: 'David Dari Dwam with in-laws - extended family' },
   // { id: 18, url: Photo18, alt: 'Olaseni Olagbaju wedding portrait with bride' },
-  // { id: 19, url: Photo19, alt: 'Olaseni Babatunde Olagbaju and wife - lifelong partners' },
+  // { id: 19, url: Photo19, alt: 'David Dari Dwam and wife - lifelong partners' },
   // { id: 20, url: Photo20, alt: 'Olaseni Olagbaju at son wedding - proud father' },
-  // { id: 21, url: Photo21, alt: 'Olaseni Babatunde Olagbaju with wife - special moment' },
+  // { id: 21, url: Photo21, alt: 'David Dari Dwam with wife - special moment' },
   // { id: 22, url: Photo22, alt: 'Olaseni Olagbaju with wife and son - family unit' },
-  // { id: 23, url: Photo23, alt: 'Olaseni Babatunde Olagbaju with all sons together' },
+  // { id: 23, url: Photo23, alt: 'David Dari Dwam with all sons together' },
   // { id: 24, url: Photo24, alt: 'Olaseni Olagbaju at wedding party celebration' },
-  // { id: 25, url: Photo25, alt: 'Olaseni Babatunde Olagbaju wedding ceremony day' },
+  // { id: 25, url: Photo25, alt: 'David Dari Dwam wedding ceremony day' },
   // { id: 26, url: Photo26, alt: 'Olaseni Olagbaju traditional wedding attire' },
-  // { id: 27, url: Photo27, alt: 'Olaseni Babatunde Olagbaju wedding celebration moment' },
+  // { id: 27, url: Photo27, alt: 'David Dari Dwam wedding celebration moment' },
   // { id: 28, url: Photo28, alt: 'Olaseni Olagbaju formal portrait photograph' },
-  // { id: 29, url: Photo29, alt: 'Olaseni Babatunde Olagbaju with siblings - family roots' },
-  // { id: 30, url: Photo30, alt: 'Olaseni Olagbaju distinguished portrait 1951-2025' },
-  // { id: 31, url: Photo31, alt: 'Olaseni Babatunde Olagbaju family photograph' },
+  // { id: 29, url: Photo29, alt: 'David Dari Dwam with siblings - family roots' },
+  // { id: 30, url: Photo30, alt: 'Olaseni Olagbaju distinguished portrait 1951-2026' },
+  // { id: 31, url: Photo31, alt: 'David Dari Dwam family photograph' },
   // { id: 32, url: Photo32, alt: 'Olaseni Olagbaju and wife - enduring love' },
-  // { id: 33, url: Photo33, alt: 'Olaseni Babatunde Olagbaju with brother - sibling bond' },
+  // { id: 33, url: Photo33, alt: 'David Dari Dwam with brother - sibling bond' },
 ];
 
-
-
-
-const Section = ({ id, title, children }: { id: string; title: string; children: React.ReactNode }) => (
+const Section = ({
+  id,
+  title,
+  children,
+}: {
+  id: string;
+  title: string;
+  children: React.ReactNode;
+}) => (
   <section id={id} className="py-16 bg-white" aria-label="Photo gallery">
     {children}
   </section>
@@ -89,7 +112,12 @@ interface CarouselSlideProps {
   onNext: () => void;
 }
 
-const CarouselSlide: React.FC<CarouselSlideProps> = ({ images, currentIndex, onPrev, onNext }) => {
+const CarouselSlide: React.FC<CarouselSlideProps> = ({
+  images,
+  currentIndex,
+  onPrev,
+  onNext,
+}) => {
   const [isTransitioning, setIsTransitioning] = useState(false);
   const [displayIndex, setDisplayIndex] = useState(currentIndex);
   const [isMobile, setIsMobile] = useState(false);
@@ -97,14 +125,14 @@ const CarouselSlide: React.FC<CarouselSlideProps> = ({ images, currentIndex, onP
 
   useEffect(() => {
     setIsClient(true);
-    
+
     const checkMobile = () => {
       setIsMobile(window.innerWidth < 768);
     };
-    
+
     checkMobile();
-    window.addEventListener('resize', checkMobile);
-    return () => window.removeEventListener('resize', checkMobile);
+    window.addEventListener("resize", checkMobile);
+    return () => window.removeEventListener("resize", checkMobile);
   }, []);
 
   useEffect(() => {
@@ -120,8 +148,8 @@ const CarouselSlide: React.FC<CarouselSlideProps> = ({ images, currentIndex, onP
   const startIndex = images.length + displayIndex;
 
   const getTransform = () => {
-    if (!isClient) return 'translateX(0)';
-    
+    if (!isClient) return "translateX(0)";
+
     if (isMobile) {
       return `translateX(-${displayIndex * 100}%)`;
     }
@@ -131,8 +159,8 @@ const CarouselSlide: React.FC<CarouselSlideProps> = ({ images, currentIndex, onP
   return (
     <div className="relative w-full mb-8">
       <div className="relative overflow-hidden rounded-lg shadow-2xl">
-        <div 
-          className={`flex transition-transform duration-700 ease-in-out ${isTransitioning ? '' : 'duration-0'}`}
+        <div
+          className={`flex transition-transform duration-700 ease-in-out ${isTransitioning ? "" : "duration-0"}`}
           style={{ transform: getTransform() }}
         >
           {extendedImages.map((image, idx) => (
@@ -145,11 +173,14 @@ const CarouselSlide: React.FC<CarouselSlideProps> = ({ images, currentIndex, onP
                   src={image.url}
                   alt={image.alt}
                   className={`w-full h-full transition-transform duration-700 group-hover:scale-105 ${
-                    image.objectFit === "contain" ? "object-contain" : "object-cover"
+                    image.objectFit === "contain"
+                      ? "object-contain"
+                      : "object-cover"
                   }`}
                   loading={idx < 3 ? "eager" : "lazy"}
                   style={{
-                    backgroundColor: image.objectFit === "contain" ? "#f3f4f6" : "transparent",
+                    backgroundColor:
+                      image.objectFit === "contain" ? "#f3f4f6" : "transparent",
                   }}
                   quality={85}
                 />
@@ -166,7 +197,7 @@ const CarouselSlide: React.FC<CarouselSlideProps> = ({ images, currentIndex, onP
         >
           <ChevronLeft className="w-6 h-6 text-gray-800 group-hover:text-[#fcbb68] transition-colors" />
         </button>
-        
+
         <button
           onClick={onNext}
           className="hidden md:flex absolute right-4 top-1/2 -translate-y-1/2 bg-white/90 hover:bg-white p-3 rounded-full shadow-lg transition-all duration-300 hover:scale-110 z-10 items-center justify-center group"
@@ -183,8 +214,8 @@ const CarouselSlide: React.FC<CarouselSlideProps> = ({ images, currentIndex, onP
             onClick={() => onPrev()}
             className={`h-2 rounded-full transition-all duration-300 ${
               idx === displayIndex % 8
-                ? 'w-8 bg-[#fcbb68]'
-                : 'w-2 bg-gray-300 hover:bg-gray-400'
+                ? "w-8 bg-[#fcbb68]"
+                : "w-2 bg-gray-300 hover:bg-gray-400"
             }`}
             aria-label={`Go to photo ${idx + 1}`}
           />
@@ -210,13 +241,13 @@ const GalleryPage: React.FC<GalleryPageProps> = ({ onBack }) => {
         (entries) => {
           entries.forEach((entry) => {
             if (entry.isIntersecting) {
-              setVisibleImages((prev) => 
-                prev.includes(index) ? prev : [...prev, index]
+              setVisibleImages((prev) =>
+                prev.includes(index) ? prev : [...prev, index],
               );
             }
           });
         },
-        { threshold: 0.1 }
+        { threshold: 0.1 },
       );
 
       observer.observe(ref);
@@ -240,12 +271,14 @@ const GalleryPage: React.FC<GalleryPageProps> = ({ onBack }) => {
         </button>
 
         <header className="text-center mb-12 animate-fade-in">
-          <p className="text-sm text-gray-600 mb-2 tracking-wide">Captured Moments</p>
+          <p className="text-sm text-gray-600 mb-2 tracking-wide">
+            Captured Moments
+          </p>
           <h1 className="text-3xl lg:text-4xl font-bold text-black mb-2">
-            Olaseni Babatunde Olagbaju - A Life in Pictures
+            David Dari Dwam - A Life in Pictures
           </h1>
           <p className="text-lg text-gray-600 mb-4">
-            Celebrating memories from 1951 to 2025
+            Celebrating memories from 1951 to 2026
           </p>
           <div className="h-[5px] bg-gradient-to-r from-transparent via-[#fcbb68] to-transparent divider-line mx-auto rounded"></div>
         </header>
@@ -253,15 +286,15 @@ const GalleryPage: React.FC<GalleryPageProps> = ({ onBack }) => {
         <div className="space-y-6">
           {[0, 3].map((startIdx, patternIdx) => {
             if (startIdx + 2 >= galleryImages.length) return null;
-            
+
             return (
               <div
                 key={`pattern-a-${patternIdx}`}
                 ref={(el) => (imageRefs.current[startIdx] = el)}
                 className={`grid grid-cols-1 lg:grid-cols-3 gap-4 lg:gap-6 transition-all duration-700 ${
                   visibleImages.includes(startIdx)
-                    ? 'opacity-100 translate-y-0'
-                    : 'opacity-0 translate-y-10'
+                    ? "opacity-100 translate-y-0"
+                    : "opacity-0 translate-y-10"
                 }`}
               >
                 <div className="lg:col-span-2 h-[300px] md:h-[400px] lg:h-[500px] overflow-hidden rounded-lg group cursor-pointer shadow-lg hover:shadow-2xl transition-all duration-300">
@@ -269,11 +302,16 @@ const GalleryPage: React.FC<GalleryPageProps> = ({ onBack }) => {
                     src={galleryImages[startIdx].url}
                     alt={galleryImages[startIdx].alt}
                     className={`w-full h-full transition-transform duration-700 group-hover:scale-110 ${
-                      galleryImages[startIdx].objectFit === "contain" ? "object-contain" : "object-cover"
+                      galleryImages[startIdx].objectFit === "contain"
+                        ? "object-contain"
+                        : "object-cover"
                     }`}
                     loading="lazy"
                     style={{
-                      backgroundColor: galleryImages[startIdx].objectFit === "contain" ? "#f3f4f6" : "transparent",
+                      backgroundColor:
+                        galleryImages[startIdx].objectFit === "contain"
+                          ? "#f3f4f6"
+                          : "transparent",
                     }}
                   />
                 </div>
@@ -285,7 +323,10 @@ const GalleryPage: React.FC<GalleryPageProps> = ({ onBack }) => {
                       className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                       loading="lazy"
                       style={{
-                        backgroundColor: galleryImages[startIdx + 1].objectFit === "contain" ? "#f3f4f6" : "transparent",
+                        backgroundColor:
+                          galleryImages[startIdx + 1].objectFit === "contain"
+                            ? "#f3f4f6"
+                            : "transparent",
                       }}
                     />
                   </div>
@@ -296,7 +337,10 @@ const GalleryPage: React.FC<GalleryPageProps> = ({ onBack }) => {
                       className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                       loading="lazy"
                       style={{
-                        backgroundColor: galleryImages[startIdx + 2].objectFit === "contain" ? "#f3f4f6" : "transparent",
+                        backgroundColor:
+                          galleryImages[startIdx + 2].objectFit === "contain"
+                            ? "#f3f4f6"
+                            : "transparent",
                       }}
                     />
                   </div>
@@ -309,8 +353,12 @@ const GalleryPage: React.FC<GalleryPageProps> = ({ onBack }) => {
 
       <style jsx>{`
         @keyframes fadeIn {
-          from { opacity: 0; }
-          to { opacity: 1; }
+          from {
+            opacity: 0;
+          }
+          to {
+            opacity: 1;
+          }
         }
 
         .animate-fade-in {
@@ -336,7 +384,9 @@ const Funeral: React.FC = () => {
   }, [showGalleryPage]);
 
   const handlePrev = () => {
-    setCurrentIndex((prev) => (prev - 1 + galleryImages.length) % galleryImages.length);
+    setCurrentIndex(
+      (prev) => (prev - 1 + galleryImages.length) % galleryImages.length,
+    );
   };
 
   const handleNext = () => {
@@ -350,9 +400,11 @@ const Funeral: React.FC = () => {
   return (
     <Section id="funeral pictures" title="Funeral Pictures">
       <div className="text-center mb-12 animate-fade-in px-4">
-        <p className="text-sm text-gray-600 mb-2 tracking-wide">Final Farewell</p>
+        <p className="text-sm text-gray-600 mb-2 tracking-wide">
+          Final Farewell
+        </p>
         <h2 className="text-3xl lg:text-4xl font-bold text-black mb-2">
-          Olaseni Babatunde Olagbaju
+          David Dari Dwam
         </h2>
         <p className="text-lg text-gray-600 mb-4">
           Funeral and memorial service photo gallery
@@ -371,7 +423,7 @@ const Funeral: React.FC = () => {
         <button
           onClick={() => setShowGalleryPage(true)}
           className="bg-[#fcbb68] text-black px-8 py-3 rounded-lg font-semibold hover:bg-[#e5a851] transition-all duration-300 shadow-md hover:shadow-xl hover:scale-105 transform"
-          aria-label="View full photo gallery of Olaseni Babatunde Olagbaju"
+          aria-label="View full photo gallery of David Dari Dwam"
         >
           See More Photos
         </button>
