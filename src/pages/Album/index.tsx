@@ -75,28 +75,16 @@ const galleryImages = [
 
 ];
 
-const GalleryFullPage = ({ onBack }) => {
-  const audioRef = useRef(null);
+const GalleryFullPage = ({ onBack, audioRef }) => {
 
-  useEffect(() => {
-    // Create and play audio when component mounts
-    if (!audioRef.current) {
-      audioRef.current = new Audio("/assets/music/song.mp3");
-      audioRef.current.loop = true;
-      audioRef.current.volume = 0.6;
+ useEffect(() => {
+  return () => {
+    if (audioRef.current) {
+      audioRef.current.pause();
+      audioRef.current.currentTime = 0;
     }
-
-    audioRef.current.play().catch((error) => {
-    });
-
-    // Cleanup: stop audio when component unmounts
-    return () => {
-      if (audioRef.current) {
-        audioRef.current.pause();
-        audioRef.current.currentTime = 0;
-      }
-    };
-  }, []);
+  };
+}, []);
 
   return (
     <div className="min-h-screen bg-gray-50 py-8 md:py-16">

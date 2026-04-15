@@ -404,6 +404,7 @@ const GalleryPage: React.FC<GalleryPageProps> = ({ onBack }) => {
 const Gallery: React.FC = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [showGalleryPage, setShowGalleryPage] = useState(false);
+const galleryAudioRef = useRef(null);
 
   useEffect(() => {
     if (!showGalleryPage) {
@@ -426,8 +427,8 @@ const Gallery: React.FC = () => {
   };
 
   if (showGalleryPage) {
-    return <GalleryFullPage onBack={() => setShowGalleryPage(false)} />;
-  }
+// Where GalleryFullPage is rendered in Gallery
+return <GalleryFullPage onBack={() => setShowGalleryPage(false)} audioRef={galleryAudioRef} />;  }
 
   return (
     <Section id="gallery" title="Gallery">
@@ -454,8 +455,16 @@ const Gallery: React.FC = () => {
       {/* See More Button with Animation */}
       <div className="flex justify-center mb-8">
         <button
-          onClick={() => setShowGalleryPage(true)}
-          className="bg-[#fcbb68] text-black px-8 py-3 rounded-lg font-semibold hover:bg-[#e5a851] transition-all duration-300 shadow-md hover:shadow-xl hover:scale-105 transform"
+onClick={() => {
+  // Start audio on this user gesture before mounting GalleryFullPage
+  if (!galleryAudioRef.current) {
+    galleryAudioRef.current = new Audio("/assets/music/song.mp3");
+    galleryAudioRef.current.loop = true;
+    galleryAudioRef.current.volume = 0.6;
+  }
+  galleryAudioRef.current.play().catch(() => {});
+  setShowGalleryPage(true);
+}}          className="bg-[#fcbb68] text-black px-8 py-3 rounded-lg font-semibold hover:bg-[#e5a851] transition-all duration-300 shadow-md hover:shadow-xl hover:scale-105 transform"
           aria-label="View full photo gallery of David Dari Dwam"
         >
           See More Photos
