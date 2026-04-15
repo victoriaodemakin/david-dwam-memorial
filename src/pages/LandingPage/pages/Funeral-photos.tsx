@@ -8,34 +8,34 @@ import Photo2 from "../../../../public/assets/images/paper-header-pic.jpeg";
 import Photo3 from "../../../../public/assets/images/paper-header-pic.jpeg";
 import Photo4 from "../../../../public/assets/images/paper-header-pic.jpeg";
 import Photo5 from "../../../../public/assets/images/paper-header-pic.jpeg";
-// import Photo7 from "../../../../public/assets/images/daddy-sons.jpg"
-// import Photo6 from "../../../../public/assets/images/daddy-bride-2.jpg"
-// import Photo8 from "../../../../public/assets/images/daddy-family.jpg"
-// import Photo9 from "../../../../public/assets/images/daddy-family-2.jpg"
-// import Photo10 from "../../../../public/assets/images/daddy-family-4.jpg"
-// import Photo11 from "../../../../public/assets/images/daddy-bride-3.jpg"
-// import Photo13 from "../../../../public/assets/images/daddy-family-5.jpg"
-// import Photo14 from "../../../../public/assets/images/daddy-grandpa.jpg"
-// import Photo15 from "../../../../public/assets/images/daddy-christmas.jpg"
-// import Photo16 from "../../../../public/assets/images/daddy-family-7.jpg"
-// import  Photo17 from "../../../../public/assets/images/daddy-in-laws.jpg"
-// import Photo18 from "../../../../public/assets/images/daddy-married.jpg"
-// import  Photo19 from "../../../../public/assets/images/daddy-mummy-2.jpg"
-// import  Photo20 from "../../../../public/assets/images/daddy-son-wedding.jpg"
-// import  Photo21 from "../../../../public/assets/images/daddy-mummy-3.jpg"
-// import Photo22 from "../../../../public/assets/images/daddy-mummy-son-1.jpg"
-// import Photo23 from "../../../../public/assets/images/daddy-sons.jpg"
-// import Photo24 from "../../../../public/assets/images/daddy-wdding-party.jpg"
-// import Photo25 from "../../../../public/assets/images/daddy-wedding-1.jpg"
-// import Photo26 from "../../../../public/assets/images/daddy-wedding-3.jpg"
-// import Photo27 from "../../../../public/assets/images/daddy-wedding-4.jpg"
-// import Photo28 from "../../../../public/assets/images/Olaseni-Babatunde-Olagbaju-1.jpg"
-// import Photo29 from "../../../../public/assets/images/daddy-silbings.jpg"
-
-// import Photo30 from "../../../../public/assets/images/Olaseni-Babatunde-Olagbaju-4.jpg"
-// import Photo31 from "../../../../public/assets/images/WhatsApp Image 2026-11-18 at 21.36.48_6dcbae00.jpg"
-// import Photo32 from "../../../../public/assets/images/daddy-mummy-4.jpg"
-// import Photo33 from "../../../../public/assets/images/daddy-brother.jpg"
+import Photo6 from "../../../../public/assets/images/paper-header-pic.jpeg";
+import Photo7 from "../../../../public/assets/images/paper-header-pic.jpeg";
+import Photo8 from "../../../../public/assets/images/paper-header-pic.jpeg";
+import Photo9 from "../../../../public/assets/images/paper-header-pic.jpeg";
+import Photo10 from "../../../../public/assets/images/paper-header-pic.jpeg";
+import Photo11 from "../../../../public/assets/images/paper-header-pic.jpeg";
+import Photo12 from "../../../../public/assets/images/paper-header-pic.jpeg";
+import Photo13 from "../../../../public/assets/images/paper-header-pic.jpeg";
+import Photo14 from "../../../../public/assets/images/paper-header-pic.jpeg";
+import Photo15 from "../../../../public/assets/images/paper-header-pic.jpeg";
+import Photo16 from "../../../../public/assets/images/paper-header-pic.jpeg";
+import Photo17 from "../../../../public/assets/images/paper-header-pic.jpeg";
+import Photo18 from "../../../../public/assets/images/paper-header-pic.jpeg";
+import Photo19 from "../../../../public/assets/images/paper-header-pic.jpeg";
+import Photo20 from "../../../../public/assets/images/paper-header-pic.jpeg";
+import Photo21 from "../../../../public/assets/images/paper-header-pic.jpeg";
+import Photo22 from "../../../../public/assets/images/paper-header-pic.jpeg";
+import Photo23 from "../../../../public/assets/images/paper-header-pic.jpeg";
+import Photo24 from "../../../../public/assets/images/paper-header-pic.jpeg";
+import Photo25 from "../../../../public/assets/images/paper-header-pic.jpeg";
+import Photo26 from "../../../../public/assets/images/paper-header-pic.jpeg";
+import Photo27 from "../../../../public/assets/images/paper-header-pic.jpeg";
+import Photo28 from "../../../../public/assets/images/paper-header-pic.jpeg";
+import Photo29 from "../../../../public/assets/images/paper-header-pic.jpeg";
+import Photo30 from "../../../../public/assets/images/paper-header-pic.jpeg";
+import Photo31 from "../../../../public/assets/images/paper-header-pic.jpeg";
+import Photo32 from "../../../../public/assets/images/paper-header-pic.jpeg";
+import Photo33 from "../../../../public/assets/images/paper-header-pic.jpeg";
 
 // SEO-Enhanced Alt Text with Full Name
 const galleryImages = [
@@ -62,33 +62,33 @@ const galleryImages = [
     url: Photo5,
     alt: "David Dari Dwam at daughter wedding celebration",
   },
-  // { id: 6, url: Photo6, alt: 'Olaseni Olagbaju with bride - proud father moment' },
-  // { id: 7, url: Photo7, alt: 'David Dari Dwam with sons - family bond' },
-  // { id: 8, url: Photo8, alt: 'Olaseni Olagbaju family gathering - generations together' },
-  // { id: 9, url: Photo9, alt: 'David Dari Dwam family celebration' },
-  // { id: 10, url: Photo10, alt: 'Olaseni Olagbaju with extended family members' },
-  // { id: 11, url: Photo11, alt: 'David Dari Dwam daughter wedding moment' },
-  // { id: 13, url: Photo13, alt: 'David Dari Dwam family outdoor gathering' },
-  // { id: 14, url: Photo14, alt: 'Olaseni Olagbaju as grandfather - legacy continues' },
-  // { id: 15, url: Photo15, alt: 'David Dari Dwam multi-generational family photo' },
-  // { id: 16, url: Photo16, alt: 'Olaseni Olagbaju with children and grandchildren' },
-  // { id: 17, url: Photo17, alt: 'David Dari Dwam with in-laws - extended family' },
-  // { id: 18, url: Photo18, alt: 'Olaseni Olagbaju wedding portrait with bride' },
-  // { id: 19, url: Photo19, alt: 'David Dari Dwam and wife - lifelong partners' },
-  // { id: 20, url: Photo20, alt: 'Olaseni Olagbaju at son wedding - proud father' },
-  // { id: 21, url: Photo21, alt: 'David Dari Dwam with wife - special moment' },
-  // { id: 22, url: Photo22, alt: 'Olaseni Olagbaju with wife and son - family unit' },
-  // { id: 23, url: Photo23, alt: 'David Dari Dwam with all sons together' },
-  // { id: 24, url: Photo24, alt: 'Olaseni Olagbaju at wedding party celebration' },
-  // { id: 25, url: Photo25, alt: 'David Dari Dwam wedding ceremony day' },
-  // { id: 26, url: Photo26, alt: 'Olaseni Olagbaju traditional wedding attire' },
-  // { id: 27, url: Photo27, alt: 'David Dari Dwam wedding celebration moment' },
-  // { id: 28, url: Photo28, alt: 'Olaseni Olagbaju formal portrait photograph' },
-  // { id: 29, url: Photo29, alt: 'David Dari Dwam with siblings - family roots' },
-  // { id: 30, url: Photo30, alt: 'Olaseni Olagbaju distinguished portrait 1951-2026' },
-  // { id: 31, url: Photo31, alt: 'David Dari Dwam family photograph' },
-  // { id: 32, url: Photo32, alt: 'Olaseni Olagbaju and wife - enduring love' },
-  // { id: 33, url: Photo33, alt: 'David Dari Dwam with brother - sibling bond' },
+  { id: 6, url: Photo6, alt: 'Olaseni Olagbaju with bride - proud father moment' },
+  { id: 7, url: Photo7, alt: 'David Dari Dwam with sons - family bond' },
+  { id: 8, url: Photo8, alt: 'Olaseni Olagbaju family gathering - generations together' },
+  { id: 9, url: Photo9, alt: 'David Dari Dwam family celebration' },
+  { id: 10, url: Photo10, alt: 'Olaseni Olagbaju with extended family members' },
+  { id: 11, url: Photo11, alt: 'David Dari Dwam daughter wedding moment' },
+  { id: 13, url: Photo13, alt: 'David Dari Dwam family outdoor gathering' },
+  { id: 14, url: Photo14, alt: 'Olaseni Olagbaju as grandfather - legacy continues' },
+  { id: 15, url: Photo15, alt: 'David Dari Dwam multi-generational family photo' },
+  { id: 16, url: Photo16, alt: 'Olaseni Olagbaju with children and grandchildren' },
+  { id: 17, url: Photo17, alt: 'David Dari Dwam with in-laws - extended family' },
+  { id: 18, url: Photo18, alt: 'Olaseni Olagbaju wedding portrait with bride' },
+  { id: 19, url: Photo19, alt: 'David Dari Dwam and wife - lifelong partners' },
+  { id: 20, url: Photo20, alt: 'Olaseni Olagbaju at son wedding - proud father' },
+  { id: 21, url: Photo21, alt: 'David Dari Dwam with wife - special moment' },
+  { id: 22, url: Photo22, alt: 'Olaseni Olagbaju with wife and son - family unit' },
+  { id: 23, url: Photo23, alt: 'David Dari Dwam with all sons together' },
+  { id: 24, url: Photo24, alt: 'Olaseni Olagbaju at wedding party celebration' },
+  { id: 25, url: Photo25, alt: 'David Dari Dwam wedding ceremony day' },
+  { id: 26, url: Photo26, alt: 'Olaseni Olagbaju traditional wedding attire' },
+  { id: 27, url: Photo27, alt: 'David Dari Dwam wedding celebration moment' },
+  { id: 28, url: Photo28, alt: 'Olaseni Olagbaju formal portrait photograph' },
+  { id: 29, url: Photo29, alt: 'David Dari Dwam with siblings - family roots' },
+  { id: 30, url: Photo30, alt: 'Olaseni Olagbaju distinguished portrait 1951-2026' },
+  { id: 31, url: Photo31, alt: 'David Dari Dwam family photograph' },
+  { id: 32, url: Photo32, alt: 'Olaseni Olagbaju and wife - enduring love' },
+  { id: 33, url: Photo33, alt: 'David Dari Dwam with brother - sibling bond' },
 ];
 
 const Section = ({

@@ -11,7 +11,6 @@ const Navigation = () => {
     "Timeline",
     "Favorites",
     "Gallery",
-    "Funeral Pictures",
     "Leave a Tribute",
   ];
 

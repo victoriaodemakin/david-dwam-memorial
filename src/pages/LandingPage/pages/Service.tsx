@@ -1,6 +1,6 @@
 import Section from "../components/sessionManagement";
-import React, { useState } from "react";
-import { MapPin, Calendar, Video, Users, Phone } from "lucide-react";
+import React from "react";
+import { MapPin, Calendar, Video, Phone } from "lucide-react";
 
 const Service = () => {
   return (
@@ -21,7 +21,7 @@ const Service = () => {
           <div className="w-full">
             <div className="bg-gray-100 rounded-lg overflow-hidden shadow-lg h-[400px] lg:h-[600px]">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2481.8364187742547!2d0.033662676570755414!3d51.53227200763697!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47d8a7f0d5f3b5f5%3A0x4f6b9c9c9c9c9c9c!2sEast%20London%20Crematorium!5e0!3m2!1sen!2suk!4v1635184945315!5m2!1sen!2suk"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2481.8364187742547!2d0.033662676570755414!3d51.53227200763697!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47d8a7f0d5f3b5f5%3A0x4f6b9c9c9c9c9c9c!2s365%20Ojo%20Igbede%20Rd%2C%20Ajangbadi%2C%20Lagos!5e0!3m2!1sen!2sng!4v1635184945315!5m2!1sen!2sng"
                 width="100%"
                 height="100%"
                 style={{ border: 0 }}
@@ -38,64 +38,121 @@ const Service = () => {
               <p className="text-gray-700 font-light leading-relaxed">
                 Please join us to pay a last tribute.
               </p>
-
               <p className="text-gray-700 font-light leading-relaxed">
                 We invite you to join us in a solemn gathering as we come
-                together to celebrate the life of our beloved Rev David Dari Dwam .
-                Your presence would mean a great deal to us as we remember and
-                honor the legacy of our beloved Husband, Father, Brother, Uncle and Pastor.
+                together to celebrate the life of our beloved Rev David Dari
+                Dwam. Your presence would mean a great deal to us as we remember
+                and honor the legacy of our beloved Husband, Father, Brother,
+                Uncle and Pastor.
               </p>
-
               <p className="text-gray-700 font-light leading-relaxed">
                 In this moment of remembrance, let us come together to share our
                 fond memories, offer our support to one another, and bid
                 farewell to a truly exceptional individual.
               </p>
-
               <p className="text-gray-700 font-light leading-relaxed">
-                Please join us in commemorating Rev David Dari Dwam's life and the positive
-                impact he had on all of us.
+                Please join us in commemorating Rev David Dari Dwam's life and
+                the positive impact he had on all of us.
               </p>
             </div>
 
             {/* Event Information */}
-            <div className="space-y-4 pt-4">
-              {/* Location */}
-              <div className="flex items-start gap-3">
-                <MapPin
-                  className="w-5 h-5 flex-shrink-0 mt-1"
+            <div className="space-y-6 pt-4">
+              {/* ── Event 1: Songs of Service ── */}
+              <div
+                className="border-l-4 pl-4"
+                style={{ borderColor: "#deac6c" }}
+              >
+                <p
+                  className="font-semibold text-lg mb-3"
                   style={{ color: "#deac6c" }}
-                />
-                <div>
-                  <p className="font-medium" style={{ color: "#deac6c" }}>
-                    Location
-                  </p>
-                  <p className="text-gray-700 font-light">
-                   365 Ojo Igbede Road,
-                  </p>
-                  <p className="text-gray-700 font-light">
-                   Ajangbadi Ojo Lagos
-                  </p>
-                 
+                >
+                  Songs of Service
+                </p>
+
+                <div className="space-y-3">
+                  <div className="flex items-start gap-3">
+                    <MapPin
+                      className="w-5 h-5 flex-shrink-0 mt-1"
+                      style={{ color: "#deac6c" }}
+                    />
+                    <div>
+                      <p className="font-medium" style={{ color: "#deac6c" }}>
+                        Location
+                      </p>
+                      <p className="text-gray-700 font-light">
+                        365 Ojo Igbede Road,
+                      </p>
+                      <p className="text-gray-700 font-light">
+                        Ajangbadi Ojo, Lagos
+                      </p>
+                    </div>
+                  </div>
+
+                  <div className="flex items-start gap-3">
+                    <Calendar
+                      className="w-5 h-5 flex-shrink-0 mt-1"
+                      style={{ color: "#deac6c" }}
+                    />
+                    <div>
+                      <p className="font-medium" style={{ color: "#deac6c" }}>
+                        Date/Time
+                      </p>
+                      <p className="text-gray-700 font-light">
+                        Wed 15, April 2026
+                      </p>
+                      <p className="text-gray-700 font-light">4:00 PM</p>
+                    </div>
+                  </div>
                 </div>
               </div>
 
-              {/* Date/Time */}
-              <div className="flex items-start gap-3">
-                <Calendar
-                  className="w-5 h-5 flex-shrink-0 mt-1"
+              {/* ── Event 2: Final Burial Rite & Wake Keeping ── */}
+              <div
+                className="border-l-4 pl-4"
+                style={{ borderColor: "#deac6c" }}
+              >
+                <p
+                  className="font-semibold text-lg mb-3"
                   style={{ color: "#deac6c" }}
-                />
-                <div>
-                  <p className="font-medium" style={{ color: "#deac6c" }}>
-                    Date/Time
-                  </p>
-                  <p className="text-gray-700 font-light">Wed 15, April 2026</p>
-                  <p className="text-gray-700 font-light">4:00 PM</p>
+                >
+                  Final Burial Rite & Wake Keeping
+                </p>
+
+                <div className="space-y-3">
+                  <div className="flex items-start gap-3">
+                    <MapPin
+                      className="w-5 h-5 flex-shrink-0 mt-1"
+                      style={{ color: "#deac6c" }}
+                    />
+                    <div>
+                      <p className="font-medium" style={{ color: "#deac6c" }}>
+                        Location
+                      </p>
+                      <p className="text-gray-700 font-light">Michika,</p>
+                      <p className="text-gray-700 font-light">
+                        Adamawa State, Nigeria
+                      </p>
+                    </div>
+                  </div>
+
+                  <div className="flex items-start gap-3">
+                    <Calendar
+                      className="w-5 h-5 flex-shrink-0 mt-1"
+                      style={{ color: "#deac6c" }}
+                    />
+                    <div>
+                      <p className="font-medium" style={{ color: "#deac6c" }}>
+                        Date/Time
+                      </p>
+                      <p className="text-gray-700 font-light">
+                        — Please confirm date & time —
+                      </p>
+                    </div>
+                  </div>
                 </div>
               </div>
 
-              {/* Virtual Event */}
               {/* Virtual Event */}
               <div className="flex items-start gap-3">
                 <Video
@@ -117,11 +174,10 @@ const Service = () => {
                   >
                     Click here to join live stream →
                   </a>
-                
                 </div>
               </div>
 
-              {/* RSVP Contact */}
+              {/* RSVP */}
               <div className="flex items-start gap-3">
                 <Phone
                   className="w-5 h-5 flex-shrink-0 mt-1"
@@ -132,10 +188,10 @@ const Service = () => {
                     RSVP
                   </p>
                   <p className="text-gray-700 font-light">
-                    Please contact David Amsami 
+                    Please contact David Amsami
                   </p>
                   <a
-                    href="tel:07770056250"
+                    href="tel:08104796005"
                     className="text-[#deac6c] hover:underline font-medium"
                   >
                     08104796005
