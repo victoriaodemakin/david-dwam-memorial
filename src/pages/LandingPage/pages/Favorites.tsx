@@ -49,7 +49,7 @@ The Bible        </p>
           </h3>
         </div>
         <p className="text-gray-700 text-sm leading-relaxed">
-					Psalms 91         </p>
+					John 1:1-5       </p>
       </div>
 
       {/* Favorite Travel Destination */}
