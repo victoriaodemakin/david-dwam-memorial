@@ -33,7 +33,7 @@ Always yours, your wife."
   },
   {
     id: 4,
-    name: "Echem David",
+    name: "David Echem Excel",
     title: "Daughter",
     message:
       `You were a man of strength, wisdom, and quiet kindness, a man of solid truth and right principles, who lived life with simplicity and grace. Your presence brought peace, and your words always carried truth and direction. You had a way of making everything feel okay, even when it wasn’t. Through you, I learned what it truly means to be strong, to be patient, and to stand firm in all circumstances. You taught me to keep pushing no matter what it takes until success is achieved, to always hold on to God, and so much more.
@@ -52,20 +52,151 @@ Rest well, my papi. You will forever be in my heart. I promise to hold on to eve
   },
   {
     id: 5,
-    name: "Pastor Joe Nwoake",
+    name: "Pastor Joe Awoke",
     title: "Pastor & Friend",
-    message:
-      "Rev David Dari Dwam was a man of rare integrity and deep faith. From his years of distinguished service in the Nigerian Navy to his faithful years in pastoral ministry, he carried himself with honour and humility in every season of life. He was a true soldier of the cross — disciplined, devoted, and deeply compassionate. His love for God and for people was evident in everything he did. The church has lost a pillar, the ministry has lost a faithful servant, and I have lost a dear brother in Christ. His example will continue to inspire all who had the privilege of knowing him. Rest well, Rev. Your labour was not in vain.",
+    message:`Today is the day of lamentation in our ministry and
+the entire body of Christ, for we have lost someone
+so dear to us.
+Rev. David Dari Dwam was a perfect gentleman to
+everyone he came across, hence, people will
+always remember him for his wits and penetrating
+understanding.
+A sincere believer, a man of unwavering faith in
+God. His teachings from the word of God, on
+humility, hard work and integrity were lessons
+carved into our lives and a source of strength to all
+of us.
+We will miss his wisdom, his love and his prayers.
+He was always there for people when they needed
+him irrespective of their tribes and religion, even at
+the ugly expense of his own immediate family.
+My people, time is considered too harsh because it
+carries with it the touch of death.
+Nevertheless, I pray that God will give us the grace
+to cope with the emptiness that his death has
+caused us.
+A place is now vacant in our lives, that can never
+be filled.
+Right now, I am heart broken.
+I never thought the end was near.
+You were gone before I knew it and only God
+knows why.
+No time to say GOODBYE, yes, no GOODBYE.
+My heart aches in sadness and secret tears flow
+from my eyes without stopping.
+The pain of heartache without farewell, only those
+who have lost can tell.
+The only thing that is dead is your body, but your
+glory and courage will forever live in our hearts.My people, time is considered too harsh because it
+carries with it the touch of death.
+Nevertheless, I pray that God will give us the grace
+to cope with the emptiness that his death has
+caused us.
+A place is now vacant in our lives, that can never
+be filled.
+Right now, I am heart broken.
+I never thought the end was near.
+You were gone before I knew it and only God
+knows why.
+No time to say GOODBYE, yes, no GOODBYE.
+My heart aches in sadness and secret tears flow
+from my eyes without stopping.
+The pain of heartache without farewell, only those
+who have lost can tell.
+The only thing that is dead is your body, but your
+glory and courage will forever live in our hearts.
+May your soul seek the peace it deserves.
+Among the ruins, there are still some traces of an
+architecture.
+The Lord may have you in His keeping, but we will
+always have you in our hearts.
+God, we thank you for letting us have him for a
+while.
+GOODBYE DADDY, GOODBYE my HERO.`,
     relationship: "Pastor & Friend",
   },
   {
     id: 6,
-    name: "Pastor Olugbade",
-    title: "Pastor & Friend",
-    message:
-      "I had the honour of walking alongside Rev David Dari Dwam in ministry, and I can say without hesitation that he was one of the most genuine men of God I have ever known. He came to the pulpit not seeking recognition, but seeking souls. His years in the Nigerian Navy gave him a backbone of discipline, and his encounter with God gave him a heart full of grace. He preached what he lived and lived what he preached. To his beloved wife Pastor Mrs Naris, his children, and the entire family may the God of all comfort surround you in this season. Rev Dwam finished well. Well done, good and faithful servant.",
-    relationship: "Pastor & Friend",
+    name: "Odemakin's Family",
+    title: "Family Friend",
+    message:`Adieu, Papi. Since we first heard the news of
+your passing, there has been a sad realization
+that we will never see your wonderful smile
+again in person, only maybe in pictures and
+past videos. The relationship we had with you
+and your family was more than that of a pastor
+and his members. It was more like a Father, a
+brother, an Uncle, a friend.When you taught the
+word of God, you taught it with clear concise
+words, with power and strength. It was clear
+that you were doing God's purpose for you on
+earth. There are no amount of words that can
+summarize how wonderful, thoughtful and
+loving you were to my family and other families
+in the church.You may have gone, but the
+scepter of your presence will forever remain. If
+there is one verse in the Bible that gives us
+comfort about your passing, it is Psalm 116 vs
+15: "Precious in the sight of the LORD is the
+death of his saints."Thank you for everything
+once again and keep resting in the bosom of
+the Lord in heaven. Amen. Goodnight, Papi.`,
+    relationship: "Family Friend",
   },
+  {
+		id: 7,
+		name:"Awoke Supergrace Mmesoma",
+		title: "God Daugther",
+		message:`You taught me about integrity not just through
+words, but by living it every day. When life brought
+storms, you were the rock my family could lean on.
+I want to thank you for taking your role seriously,
+for the birthday prayers, the advice, and for simply
+being present in my life.
+While this is a farewell for now, I know that the
+lessons you’ve instilled in me will stay with me
+forever. I love you more than I tell you, and I miss
+you already. Thank you for being the best
+Godfather anyone could ask for.`,
+realationship: "God Daughter",
+	},
+
+	  {
+		id: 8,
+		name:"Mr & Mrs S. Aigbedion Family",
+		title: "Member of the Church",
+		message:`With heavy hearts, we remember Rev. David
+Dwam, a caring pastor whose life was a
+blessing to so many.
+He served with kindness, humility, and deep
+love for God and His people. His words brought
+comfort, his prayers gave strength, and his
+compassion touched countless lives.
+Though he has passed away, his legacy of faith,
+service, and love will remain in our hearts
+forever. We thank God for the gift of his life and
+the difference he made in the lives of others.
+May his soul rest in perfect peace.`,
+realationship: "Member of the Church",
+		},
+		  {
+		id: 9,
+		name:"Emmanuel.E.A. Joseph",
+		title: "Spiritual Son",
+		message:`I want to take this moment to tell you how much
+you mean to me. Over the years, I’ve watched
+you—how you work hard, how you treat people
+with kindness, and how you have never stopped
+learning.
+You’ve always been someone I looked up to.
+Thank you for showing me what it means to be a
+person of character. I’ll always cherish the
+memories we’ve shared and the guidance you’ve
+given me.
+I wish you all the best in your next chapter, and I
+hope you know that you have made a lasting
+impact in my life. Cheers to you!`,
+realationship: "Spiritual Son",},
 ];
 
 const EulogiesSection = () => {
