@@ -8,7 +8,11 @@ const eulogiesData = [
     name: "Pastor Mrs Nerias Dari david",
     title: "Wife",
     message:
-      "My beloved David, your departure has left a void in my heart that words cannot fully express. You were not just my husband, you were my partner in faith, my strength, and my greatest encourager. Together we walked this journey of life and ministry, and I am forever grateful for every moment God gave us. You served the Lord with all your heart, and I know He has welcomed you home with the words, 'Well done, good and faithful servant.' I will carry your love, your laughter, and your legacy with me every day. Until we meet again, rest in the arms of the Father you served so well. I love you always.",
+      `"You were more than a husband—you were my partner and my rock. Saying goodbye was the hardest thing I’ve ever done.
+You showed me how to live with strength and integrity. I’ll never forget your guidance or your favorite passage, John 1:1-5. Though you left us quietly, you left us with the peace of knowing 'It is well the righteous.' I am comforted because I know you are in a better place and that our paths will cross again.
+I love you deeply. Thank you for everything you taught me and for shaping me into the woman I am today.
+Always yours, your wife."
+ `,
     relationship: "Wife",
   },
   {
