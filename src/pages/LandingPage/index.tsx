@@ -10,7 +10,6 @@ import Service from "./pages/Service";
 import MemoryWall from "./pages/MemoryWall";
 import Gallery from "./pages/Gallery";
 import Timeline from "./pages/Timeline";
-import Funeral from "./pages/Funeral-photos"
 
 // Main App Component
 export default function MemorialPage() {
@@ -28,9 +27,8 @@ export default function MemorialPage() {
           <Eulogies />
           {/* <Timeline /> */}
 					<Favorites />
-          {/* <Gallery /> */}
+          <Gallery />
           <MemoryWall />
-					<Funeral/>
           <Service />
         </>
       )}

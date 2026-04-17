@@ -1,48 +1,52 @@
 import React, { useEffect, useRef } from "react";
 import { ChevronLeft } from "lucide-react";
 import Image from "next/image";
-import Photo1 from "../../../public/assets/images/paper-header-pic.jpeg";
-import Photo2 from "../../../public/assets/images/paper-header-pic.jpeg";
-import Photo3 from "../../../public/assets/images/paper-header-pic.jpeg";
-import Photo4 from "../../../public/assets/images/paper-header-pic.jpeg";
-import Photo0 from "../../../public/assets/images/paper-header-pic.jpeg";
-import Photo6 from "../../../public/assets/images/paper-header-pic.jpeg";
-import Photo7 from "../../../public/assets/images/paper-header-pic.jpeg";
-import Photo8 from "../../../public/assets/images/paper-header-pic.jpeg";
-import Photo9 from "../../../public/assets/images/paper-header-pic.jpeg";
-import Photo10 from "../../../public/assets/images/paper-header-pic.jpeg";
-import Photo11 from "../../../public/assets/images/paper-header-pic.jpeg";
-import Photo12 from "../../../public/assets/images/paper-header-pic.jpeg";
-import Photo13 from "../../../public/assets/images/paper-header-pic.jpeg";
-import Photo14 from "../../../public/assets/images/paper-header-pic.jpeg";
-import Photo15 from "../../../public/assets/images/paper-header-pic.jpeg";
-import Photo16 from "../../../public/assets/images/paper-header-pic.jpeg";
-import Photo17 from "../../../public/assets/images/paper-header-pic.jpeg";
-import Photo18 from "../../../public/assets/images/paper-header-pic.jpeg";
-import Photo19 from "../../../public/assets/images/paper-header-pic.jpeg";
-import Photo20 from "../../../public/assets/images/paper-header-pic.jpeg";
-import Photo21 from "../../../public/assets/images/paper-header-pic.jpeg";
-import Photo22 from "../../../public/assets/images/paper-header-pic.jpeg";
-import Photo23 from "../../../public/assets/images/paper-header-pic.jpeg";
-import Photo24 from "../../../public/assets/images/paper-header-pic.jpeg";
-import Photo25 from "../../../public/assets/images/paper-header-pic.jpeg";
-import Photo26 from "../../../public/assets/images/paper-header-pic.jpeg";
-import Photo27 from "../../../public/assets/images/paper-header-pic.jpeg";
-import Photo28 from "../../../public/assets/images/paper-header-pic.jpeg";
-import Photo29 from "../../../public/assets/images/paper-header-pic.jpeg";
-import Photo30 from "../../../public/assets/images/paper-header-pic.jpeg";
-import Photo31 from "../../../public/assets/images/paper-header-pic.jpeg";
-import Photo32 from "../../../public/assets/images/paper-header-pic.jpeg";
-import Photo33 from "../../../public/assets/images/paper-header-pic.jpeg";
+
+import Photo1 from "../../../public/assets/images/young-papa.jpg";
+import Photo2 from "../../../public/assets/images/young-pap-2.jpg";
+import Photo3 from "../../../public/assets/images/papa-navy.jpg";
+import Photo12 from "../../../public/assets/images/papa-school-1.jpg";
+import Photo4 from "../../../public/assets/images/papa-at-alter.jpeg";
+import Photo5 from "../../../public/assets/images/papa-alone.jpeg";
+import Photo6 from "../../../public/assets/images/papa-marry-1.jpg";
+import Photo7 from "../../../public/assets/images/papa-married-2.jpg";
+import Photo8 from "../../../public/assets/images/papa-mama-1.jpg";
+import Photo9 from "../../../public/assets/images/papa-mama.jpg";
+import Photo10 from "../../../public/assets/images/youn-papa-mama-2.jpg";
+import Photo11 from "../../../public/assets/images/young-papa-mama.jpg";
+import Photo13 from "../../../public/assets/images/papa-amsami-1.jpeg";
+import Photo14 from "../../../public/assets/images/papa-dance-1.jpg";
+import Photo15 from "../../../public/assets/images/papa-family-1.jpg";
+import Photo16 from "../../../public/assets/images/papa-frien.jpg";
+import Photo17 from "../../../public/assets/images/papa-family-3.jpg";
+import Photo18 from "../../../public/assets/images/papa-young.jpg";
+import Photo19 from "../../../public/assets/images/papa-red-pictures.jpeg";
+import Photo20 from "../../../public/assets/images/papa-amsami-2.jpeg";
+import Photo21 from "../../../public/assets/images/papa-friend-4.jpg";
+import Photo22 from "../../../public/assets/images/papa-friend-5.jpg";
+import Photo23 from "../../../public/assets/images/youn-papa-mama-2.jpg";
+import Photo24 from "../../../public/assets/images/papa-family-3.jpg";
+import Photo25 from "../../../public/assets/images/IMG_20260412_161947.jpg";
+import Photo26 from "../../../public/assets/images/IMG_20260412_160343.jpg";
+import Photo27 from "../../../public/assets/images/IMG_20260412_132850.jpg";
+import Photo28 from "../../../public/assets/images/IMG_20260412_161238.jpg";
+import Photo29 from "../../../public/assets/images/IMG_20260412_161409.jpg";
+import Photo30 from "../../../public/assets/images/IMG_20260412_162241.jpg";
+import Photo31 from "../../../public/assets/images/IMG_20260412_161740.jpg";
+import Photo32 from "../../../public/assets/images/papa-school-1.jpg";
+import Photo33 from "../../../public/assets/images/papa-school-2.jpg";
 
 
 const galleryImages = [
-  { id: 0, url: Photo0, alt: "young daddy" },
+  { id: 0, url: Photo1, alt: "young daddy", objectFit: "contain"  },
   { id: 2, url: Photo2, alt: "Family in water" },
-  { id: 1, url: Photo1, alt: "Family outdoor moment" },
+  { id: 1, url: Photo19, alt: "Family outdoor moment" ,objectFit: "contain"  },
   { id: 3, url: Photo3, alt: "Indoor family time" },
   { id: 4, url: Photo4, alt: "Sunset family" },
-
+	{ id: 5, url: Photo5, alt: "Portrait" },
+	{ id: 23, url: Photo23, alt: "Sunset family" },
+    { id: 18, url: Photo18, alt: "Happy moments" },
+  { id: 15, url: Photo15, alt: "Portrait" },
   { id: 8, url: Photo8, alt: "Family in water" },
   { id: 9, url: Photo9, alt: "Indoor family time", objectFit: "contain" },
   { id: 7, url: Photo7, alt: "Family outdoor moment", objectFit: "contain" },
@@ -71,20 +75,41 @@ const galleryImages = [
   
 	{ id: 29, url: Photo29, alt: "Portrait" },
     { id: 33, url: Photo33, alt: "Together" },
+			{ id: 12, url: Photo12, alt: "Sunset family", objectFit: "contain"  },
+    { id: 31, url: Photo31, alt: "Happy moments" },
+  { id: 32, url: Photo32, alt: "Portrait" },
+  { id: 25, url: Photo25, alt: "Portrait" },
+
+		{ id: 23, url: Photo23, alt: "Sunset family" },
+    { id: 18, url: Photo18, alt: "Happy moments" },
+  { id: 15, url: Photo15, alt: "Portrait" },
+  { id: 5, url: Photo5, alt: "Portrait" },
 
 
 ];
 
-const GalleryFullPage = ({ onBack, audioRef }) => {
+const GalleryFullPage = ({ onBack }) => {
+  const audioRef = useRef(null);
 
- useEffect(() => {
-  return () => {
-    if (audioRef.current) {
-      audioRef.current.pause();
-      audioRef.current.currentTime = 0;
+  useEffect(() => {
+    // Create and play audio when component mounts
+    if (!audioRef.current) {
+      audioRef.current = new Audio("/assets/music/song.mp3");
+      audioRef.current.loop = true;
+      audioRef.current.volume = 0.6;
     }
-  };
-}, []);
+
+    audioRef.current.play().catch((error) => {
+    });
+
+    // Cleanup: stop audio when component unmounts
+    return () => {
+      if (audioRef.current) {
+        audioRef.current.pause();
+        audioRef.current.currentTime = 0;
+      }
+    };
+  }, []);
 
   return (
     <div className="min-h-screen bg-gray-50 py-8 md:py-16">

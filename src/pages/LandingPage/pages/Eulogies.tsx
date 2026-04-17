@@ -17,15 +17,15 @@ Always yours, your wife."
   },
   {
     id: 2,
-    name: "Amsami  David",
+    name: "David Elino Amsami",
     title: "Daughter",
     message:
-      "I can't believe that you're no longer with us my beloved father. I wasn't prepared for you to go when you did, but I understand that you've gone to a better place where you'll experience God's divine peace, joy and love. I looked up to you and thought you were invincible. You were so calm, funny, kind, and loving. I just wanted to see you happy and content because I adored you. I only wish we had more time to talk and say things that were left unsaid, I wish we had more time to make more memories. I thank God for your life and for knowing you. There will never be anyone like you. You were truly a special soul who touched the lives of so many with your warm heart and generosity. I love you so much Daddy and I believe we will see each other again in heaven. Rest in perfect peace.",
+      `"I’m still finding my way in this new reality, holding onto the promise of you walking me down the aisle. Though that moment will look different now, I am endlessly grateful for the life we shared. You gave us the foundation to be strong, and your legacy remains a constant blessing. This isn't a goodbye; I will carry your courage and discipline in my heart forever. As you used to sing, 'Atami show me your power'—watch me now, Papi, as I show you my power . It is well with the righteous.`,
     relationship: "Daughter",
   },
   {
     id: 3,
-    name: "Pano Isaac David",
+    name: "David Isaac Pano",
     title: "Son",
     message:
       "For many years I thought the critical life-changing choices I made came from my independence, not until the day I heard you praying secretly. You were interceding for everyone of us. You truly designed with your mind, spoke and prayed things into existence. Thank you for pointing us to Jesus, who's my Lord, master and Saviour; of whom I'm certain you are sitting with this moment. You've lived a life of service, of which I testify of from a tender age, and you have served here on earth and continue to do so up in heaven. I'll see your face again.",
@@ -36,7 +36,18 @@ Always yours, your wife."
     name: "Echem David",
     title: "Daughter",
     message:
-      "Daddy, you were my hero. From the Nigerian Navy to the pulpit, you showed me what it means to serve with honour and to love with a whole heart. Your discipline, your faith, and your warmth shaped everything I am. I hold on to every memory your laughter, your wisdom, your prayers over us. I thank God every day that you were my father. There will never be another like you. The world is quieter without you, but heaven is richer. Rest well, Daddy. I love you more than words can say.",
+      `You were a man of strength, wisdom, and quiet kindness, a man of solid truth and right principles, who lived life with simplicity and grace. Your presence brought peace, and your words always carried truth and direction. You had a way of making everything feel okay, even when it wasn’t. Through you, I learned what it truly means to be strong, to be patient, and to stand firm in all circumstances. You taught me to keep pushing no matter what it takes until success is achieved, to always hold on to God, and so much more.
+
+I will always hold on to the memories we shared—the laughter, the lessons, and even the little moments I never imagined I would miss this much. Those memories now mean everything to me, and they will forever live in my heart.
+
+Thank you for everything you did for me—for your sacrifices, your love, and your unwavering support. You were truly a father to many, a man people looked up to, but I am forever grateful that you were mine. Your life has left a legacy in me, and I pray to God for the strength to carry it on and make you proud.
+
+Though it hurts deeply that you are gone, I take comfort in God, knowing He loves you even more and that you are at peace with Him. My pain remains, and words cannot fully express how much I miss you and hearing your voice
+
+You will forever be in your Echem’s heart. I love you so much, Daddy… more than words could ever explain. 
+I pray your legacy goes on and is never forgotten, Sir.
+
+Rest well, my papi. You will forever be in my heart. I promise to hold on to everything you have taught me and never forget, and live my life in a way that honors you always.`,
     relationship: "Daughter",
   },
   {
