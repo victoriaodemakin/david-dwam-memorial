@@ -41,7 +41,7 @@ const galleryImages = [
   { id: 0, url: Photo1, alt: "young daddy", objectFit: "contain"  },
   { id: 2, url: Photo2, alt: "Family in water" },
   { id: 1, url: Photo19, alt: "Family outdoor moment" ,objectFit: "contain"  },
-  { id: 3, url: Photo3, alt: "Indoor family time" },
+  { id: 3, url: Photo3, alt: "Indoor family time" ,		    objectFit: "contain"},
   { id: 4, url: Photo4, alt: "Sunset family" },
 	{ id: 5, url: Photo5, alt: "Portrait" },
 	{ id: 23, url: Photo23, alt: "Sunset family" },
