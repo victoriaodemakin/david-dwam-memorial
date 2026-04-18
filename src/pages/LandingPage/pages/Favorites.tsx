@@ -61,7 +61,7 @@ The Bible        </p>
           </h3>
         </div>
         <p className="text-gray-700 text-sm leading-relaxed">
-Grace is your faithfulness        </p>
+Great is your faithfulness        </p>
       </div>
 
 

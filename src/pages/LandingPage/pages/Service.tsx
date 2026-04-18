@@ -1,6 +1,6 @@
 import Section from "../components/sessionManagement";
 import React from "react";
-import { MapPin, Calendar, Video, Phone } from "lucide-react";
+import { MapPin, Calendar, Video, Phone, Cross } from "lucide-react";
 
 const Service = () => {
   return (
@@ -20,15 +20,15 @@ const Service = () => {
           {/* Map Section */}
           <div className="w-full">
             <div className="bg-gray-100 rounded-lg overflow-hidden shadow-lg h-[400px] lg:h-[600px]">
-              <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2481.8364187742547!2d0.033662676570755414!3d51.53227200763697!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47d8a7f0d5f3b5f5%3A0x4f6b9c9c9c9c9c9c!2s365%20Ojo%20Igbede%20Rd%2C%20Ajangbadi%2C%20Lagos!5e0!3m2!1sen!2sng!4v1635184945315!5m2!1sen!2sng"
-                width="100%"
-                height="100%"
-                style={{ border: 0 }}
-                allowFullScreen={true}
-                loading="lazy"
-                title="Service Location Map"
-              ></iframe>
+             <iframe
+  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15798.234567890123!2d13.1!3d9.0!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x10fc1b0000000000%3A0x0000000000000000!2sDemsa%2C%20Adamawa%20State%2C%20Nigeria!5e0!3m2!1sen!2sng!4v1635184945315!5m2!1sen!2sng"
+  width="100%"
+  height="100%"
+  style={{ border: 0 }}
+  allowFullScreen={true}
+  loading="lazy"
+  title="Service Location Map"
+></iframe>
             </div>
           </div>
 
@@ -127,14 +127,28 @@ const Service = () => {
                     />
                     <div>
                       <p className="font-medium" style={{ color: "#deac6c" }}>
-                        Location
+                        Burial Location
                       </p>
-                      <p className="text-gray-700 font-light">Michika,</p>
+                      <p className="text-gray-700 font-light">Dwam Sakato, Demsa LGA</p>
                       <p className="text-gray-700 font-light">
                         Adamawa State, Nigeria
                       </p>
                     </div>
+									
                   </div>
+                  <div className="flex items-start gap-3">
+<Cross	
+                      className="w-5 h-5 flex-shrink-0 mt-1"
+                      style={{ color: "#deac6c" }}
+                    />
+										 <div>
+                      <p className="font-medium" style={{ color: "#deac6c" }}>
+                        Place of rest
+                      </p>
+                      <p className="text-gray-700 font-light"> Dakanta, Adamawa State </p>
+                    
+                    </div>
+									</div>
 
                   <div className="flex items-start gap-3">
                     <Calendar
@@ -146,7 +160,7 @@ const Service = () => {
                         Date/Time
                       </p>
                       <p className="text-gray-700 font-light">
-                        — Please confirm date & time —
+                       25 April 2026.
                       </p>
                     </div>
                   </div>
@@ -188,7 +202,7 @@ const Service = () => {
                     RSVP
                   </p>
                   <p className="text-gray-700 font-light">
-                    Please contact David Amsami
+                    Please contact David Elino Amsami
                   </p>
                   <a
                     href="tel:08104796005"
